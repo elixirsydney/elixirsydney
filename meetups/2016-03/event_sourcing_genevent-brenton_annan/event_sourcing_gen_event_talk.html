@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code pre { font-family: 'Ubuntu Mono'; }
+      .small { font-size: 0.7em; }
+			ul li {
+				list-style: none;
+			}
+      article, li {
+				margin: 25px 0;
+      }
+      ol li {
+				margin: 30px 0;
+      }
+      article cite {
+        display: block;
+      }
+      article cite p {
+        margin: 5px 0 0 0;
+      }
+			li p {
+				margin: 5px;
+			}
+			li pre {
+				margin: 0;
+			}
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Event Sourcing |> GenEvent
+
+brentonannan@brentonannan.com
+
+---
+
+# Event Sourcing?
+
+<blockquote>
+	"Capture all changes to an application state as a sequence of events.” 
+	<footer><cite class="right">Martin Fowler</cite></footer>
+</blockquote>
+
+---
+
+## But why?
+
+<blockquote>
+	“Erasing data is not a feature, it's a bug” - <cite>Sebastian von Conrad</cite>
+
+- When we delete data, we lose it forever
+- Deleted data potentially has value
+- Updating is just as bad as deleting
+- Event sourcing has a long and distinguished history
+- ActiveRecord must die
+
+---
+
+## Traditional CRUD web app
+
+1. `POST /users "{"username": "iliveinapark"}"`
+```
+[{id: 777, username: "iliveinapark"}]
+```
+
+1. `PUT /users/777 "{"username": "brentonannan"}"`
+```
+[{id: 777, username: "brentonannan"}]
+```
+
+1. `POST /users "{"username": "gary_mcghernikan"}"`
+```
+[{id: 777, username: "brentonannan"}, {id: 888, username: "gary_mcghernikan"}]
+```
+
+1. `DELETE /users/777`
+```
+[{id: 888, username: "gary_mcghernikan"}]
+```
+
+---
+
+## Events
+
+Instead of changing state, we can write events to a log
+
+1. `POST /users "{"username": "iliveinapark"}"`
+```
+_0900_: create record with id 777 and username "iliveinapark"
+```
+
+1. `PUT /users/777 "{"username": "brentonannan"}"`
+```
+_0901_: update username for record id 777 with username "brentonannan"
+```
+
+1. `POST /users "{"username": "gary_mcghernikan"}"`
+```
+_0902_: create record with id 888 and username "gary_mcghernikan"
+```
+
+1. `DELETE /users/777`
+```
+_0903_: delete record with id 777
+```
+
+---
+
+## Sourcing
+
+We can _rebuild_ the state by sourcing the events.
+
+1. _0900_: create record with id 777 and username "iliveinapark"
+```
+[{id: 777, username: "iliveinapark"}]
+```
+
+1. _0901_: update username for record id 777 with username "brentonannan"
+```
+[{id: 777, username: "brentonannan"}]
+```
+
+1. _0902_: create record with id 888 and username "gary_mcghernikan"
+```
+[{id: 777, username: "brentonannan"}, {id: 888, username: "gary_mcghernikan"}]
+```
+
+1. _0903_: delete record with id 777
+```
+[{id: 888, username: "gary_mcghernikan"}]
+```
+
+---
+
+## Different models
+
+We can build an entirely different state by interpreting the events differently.
+
+#### Example: Find the set of all usernames ever used
+
+1. _0900_: create record with id 777 and username "iliveinapark"
+```
+{"iliveinapark"}
+```
+
+1. _0901_: update username for record id 777 with username "brentonannan"
+```
+{"iliveinapark", "brentonannan"}
+```
+
+1. _0902_: create record with id 888 and username "gary_mcghernikan"
+```
+{"iliveinapark", "brentonannan", "gary_mcghernikan"}
+```
+
+1. _0903_: delete record with id 777
+```
+{"iliveinapark", "brentonannan", "gary_mcghernikan"}
+```
+
+---
+
+## What else can we do with models?
+
+Different event sourced models can not only have different states, they can:
+
+- do different things
+- emit events that other models can respond to
+- run concurrently
+
+---
+
+# GenEvent?
+
+One of the OTP family, similar to GenServer:
+
+- Run a _manager_ process which can be added to a supervision tree
+- Attach _handler_ modules which `use GenEvent` and implement callbacks
+- Each handler has its own state
+- Every message gets delivered to every handler in order they were added
+- Handler crashing does not crash manager, but handlers can be monitored
+
+---
+
+## Callbacks
+
+```
+use GenEvent
+```
+
+- `handle_call` similar to GenServer, but must specify handler
+- `handle_event` handles messages from `notify`, `ack_notify`, `sync_notify`
+- `handle_info` responds to everything else
+- no `handle_cast`
+- `init`, `terminate`, `code_change`
+
+---
+
+class: center, middle
+
+# Event Sourcing |> GenEvent
+
+---
+
+## Different models
+
+GenEvent handlers allow implementation of different models
+
+- Handlers can handle the same events in different ways
+- Each handler has its own state
+- Every event is delivered to every handler
+
+---
+
+### Example: Users model
+
+<pre class="small">
+defmodule Users do
+  use GenEvent
+  
+  def init(_) do
+    {:ok, %{}}
+  end
+  
+  def handle_event({:create_user, user = %{id: id}}, users) do
+    {:ok, Map.put(users, id, user)}
+  end
+  
+  def handle_event({:update_user, id, data = %{}}, users) do
+    {:ok, Map.get_and_update!(users, id, fn (user) -> {user, Map.merge(user, data)} end) |> elem(1)}
+  end
+  
+  def handle_event({:delete_user, user_id}, users) do
+    {:ok, Map.delete(users, user_id)}
+  end
+  
+  def handle_event(_, users) do
+    {:ok, users}
+  end
+  
+  def handle_call(:users, users) do
+    {:ok, Map.values(users), users}
+  end
+end
+</pre>
+
+---
+
+### Example: Usernames model
+
+<pre class="small">
+defmodule Usernames do
+  use GenEvent
+  
+  def init(_) do
+    {:ok, MapSet.new}
+  end
+  
+  def handle_event({:create_user, %{username: username}}, usernames) do
+    {:ok, MapSet.put(usernames, username)}
+  end
+  
+  def handle_event({:update_user, _user_id, %{username: username}}, usernames) do
+    {:ok, MapSet.put(usernames, username)}
+  end
+  
+  def handle_event(_, usernames) do
+    {:ok, usernames}
+  end
+  
+  def handle_call(:usernames, usernames) do
+    {:ok, MapSet.to_list(usernames), usernames}
+  end
+end
+</pre>
+
+---
+
+### It works!
+
+<pre class="small">
+events = [{:create_user, %{id: 777, username: "iliveinapark"}},
+          {:update_user, 777, %{username: "brentonannan"}},
+          {:create_user, %{id: 888, username: "gary_mcghernikan"}},
+          {:delete_user, 777}]
+
+Enum.each events, fn (event) ->
+  IO.inspect event
+  GenEvent.notify(manager, event)
+  GenEvent.call(manager, Users, :users) |> IO.inspect
+  GenEvent.call(manager, Usernames, :usernames) |> IO.inspect
+  IO.puts ""
+end
+</pre>
+
+<pre class="small">
+{:create_user, %{id: 777, username: "iliveinapark"}}
+[%{id: 777, username: "iliveinapark"}]
+["iliveinapark"]
+
+{:update_user, 777, %{username: "brentonannan"}}
+[%{id: 777, username: "brentonannan"}]
+["brentonannan", "iliveinapark"]
+
+{:create_user, %{id: 888, username: "gary_mcghernikan"}}
+[%{id: 777, username: "brentonannan"}, %{id: 888, username: "gary_mcghernikan"}]
+["brentonannan", "gary_mcghernikan", "iliveinapark"]
+
+{:delete_user, 777}
+[%{id: 888, username: "gary_mcghernikan"}]
+["brentonannan", "gary_mcghernikan", "iliveinapark"]
+</pre>
+
+---
+
+## Concurrency
+
+Handlers run quasi-concurrently 
+
+- they are all run on the same events
+- assuming handler fns are not long-running, results are available at about the same time
+
+---
+
+## Actual concurrency
+
+Use case: `:create_user`, `:update_user`, and `:delete_user` may be segmented into different tenanted applications.
+
+- assign events that are related a _correlation id_
+- start and register manager _per correlation id_
+- route events to the correct manager
+
+Each correlation id has many models, all capable of responding to events asynchronously and all with their own state.
+
+---
+
+## What's the point?
+
+Different handlers can not only have different states, they can:
+
+- do different things
+- emit events that other models can respond to
+- run concurrently
+
+This allows you to build up complex event processing applications per correlation id with one process each, and without having to manage pub/sub.
+
+---
+
+# Resources
+
+<article>
+  Event Sourcing
+  <cite>
+    <p>Martin Fowler</p>
+    <p>http://martinfowler.com/eaaDev/EventSourcing.html</p>
+  </cite>
+</article>
+
+<article>
+  Event Sourcing, or Why ActiveRecord Must Die
+  <cite>
+    <p>Sebastian von Conrad</p>
+    <p>https://rubyconf.eventer.com/rubyconf-australia-2016-1489/event-sourcing-or-why-activerecord-must-die-by-sebastian-von-conrad-1933</p>
+  </cite>
+</article>
+
+<article>
+  Event Handling in Elixir
+  <cite>
+    <p>Rodney Norris</p>
+    <p>http://www.tattdcodemonkey.com/blog/2015/4/24/event-handling-in-elixir</p>
+  </cite>
+</article>
+
+<article>
+  Gist of my handlers/script
+  <cite>
+    <p>https://gist.github.com/brentonannan/e17b8d1d7691af78aa96e9d8fe795b8f</p>
+  </cite>
+</article>
+
+.center[brentonannan@brentonannan.com]
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
