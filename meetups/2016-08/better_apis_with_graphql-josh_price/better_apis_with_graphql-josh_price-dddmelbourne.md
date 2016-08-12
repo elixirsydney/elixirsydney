@@ -21,7 +21,7 @@
 - Gaze into the crystal ball
 
 ---
-# Experience: Building GraphQL Elixir
+# Experience: GraphQL Elixir
 
 - Mainly as a way to learn Elixir and GraphQL
 - First major open source project
@@ -54,6 +54,15 @@
 ^ URL based (easy to develop against/debug)
 
 ---
+# [Fit] REST is *hard*
+
+^ Big upfront design required
+^ Hard to model certain domains
+^ Hard to change (versioning problems)
+^ Maintainability issues
+^ No one true way to do REST (Swagger/OpenAPI)
+
+---
 # Cargo Cult?
 
 ![](cargo-cult1.jpg)
@@ -62,15 +71,6 @@
 ^ Cargo Cults still practice today in Tanna, Vanuatu
 ^ REST is a given
 ^ We use REST without thinking about it
-
----
-# [Fit] REST is *hard*
-
-^ Big upfront design required
-^ Hard to model certain domains
-^ Hard to change (versioning problems)
-^ Maintainability issues
-^ No one true way to do REST (Swagger/OpenAPI)
 
 ---
 # Common Problems
@@ -82,9 +82,9 @@
 ^ Badly designed APIs can significantly hamper the design of great frontends
 
 ---
-# [Fit] Internal APIs
-# [Fit] tightly coupled
-# [Fit] to clients
+# Internal APIs
+# are tightly coupled
+# to their clients
 
 ^ REST works well for loosely couple external APIs
 ^ Tightly coupled internal APIs can be better
@@ -169,13 +169,13 @@ or
 # Strongly
 # typed
 
-^ code generation possibilities
+^ code generation, ide tooling
 
 ^ validation of queries 
 
 ^ guarantee correct results
 
-^ possibility for great tooling
+^ possibility for great tooling, flow/elm types
 
 ---
 # Single
@@ -305,12 +305,11 @@ new GraphQLObject({
       return getProfilePicForUser(user, size);
     },
     friends(user) {
-      return user.friendIDs.map(id => promiseUser(id));
+      return user.friendIDs.map(id => getUser(id));
     }
   }
 });
 ```
-
 
 ---
 # Connecting GraphQL to the View
@@ -369,6 +368,7 @@ mutation {
 
 - Reads and writes are separate
 - Naturally supports Command / Query split
+- Separate code paths if you need it
 
 ---
 # Queries with Fragments
@@ -477,11 +477,8 @@ function PersonRow(props) {
 
 - Use for internal APIs
 - Improve mobile (and desktop performance)
-- Use when you have 
-
----
-# Early Days
-
+- Buildkite has exposed a small external API
+- Be careful exposing this to the world
 - Don't allow arbitrary queries from unknown clients
 
 ---
@@ -507,11 +504,11 @@ function PersonRow(props) {
 ---
 # Resources
 
-* Website http://graphql.org
-* Resources
-  - github.com/graphql/graphql-js
-  - github.com/graphql/express-graphql
-
+* http://graphql.org
+* https://github.com/graphql/graphql-js
+* https://github.com/graphql/express-graphql
+* Steve Luscher **Zero to GraphQL**
+* Awesome GraphQL (**chentsulin/awesome-graphql**)
 
 ---
 # Questions?
