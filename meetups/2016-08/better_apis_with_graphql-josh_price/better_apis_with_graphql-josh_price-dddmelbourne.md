@@ -75,7 +75,7 @@
 
 ![](cargo-cult1.jpg)
 
-^ Describe what a cargo cult is
+^ WW2 Pacific Islands US forces brought a lot of planes and cargo
 
 ^ Cargo Cults still practice today in Tanna, Vanuatu
 
@@ -88,6 +88,7 @@
 ## Underfetching
 
 ^ Need to anticipate all current and future clients and their needs
+
 ^ Badly designed APIs can significantly hamper the design of great frontends
 
 ---
@@ -162,7 +163,7 @@ or
 {                                     "data": {
   user(id: 1) {                         "user": {
     name                                  "name": "Josh",
-    friends(first: 1) {                     "friends": [{
+    friends(first: 1) {                   "friends": [{
       name                                  "name": "James"
     }                                     }]  
   }                                     }  
