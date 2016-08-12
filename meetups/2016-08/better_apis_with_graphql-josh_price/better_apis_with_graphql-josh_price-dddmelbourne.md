@@ -4,6 +4,12 @@
 ### github.com/joshprice
 ### @joshprice
 
+^ It's great to be here. It's my first time at a DDD conference
+
+^ Thanks for voting for my talk
+
+^ I'm flattered!
+
 ---
 # Agenda
 
@@ -12,29 +18,30 @@
 - Run queries against the schema
 - Understand important GraphQL concepts
 - Summarise client options (Relay, Apollo)
-- Understand BaaS options
+- Gaze into the crystal ball
 
 ---
-# GraphQL Elixir
+# Experience: Building GraphQL Elixir
 
-* Community driven Elixir GraphQL implementation
-* 404 stars (~22nd most popular elixir github repo)
-* ~20 contributors
-* Me and @freshtonic
+- Mainly as a way to learn Elixir and GraphQL
+- First major open source project
+- I've learned a lot
+- Lot's left to learn
+- Implementing a GraphQL server is hard
+
+^ Bit of background in case you're wondering "what does this guy know about GraphQL?"
+
+^ Community driven Elixir GraphQL implementation
+
+^ 404 stars (~22nd most popular elixir github repo) ~20 contributors
 
 ---
-> The only way of discovering the limits of the possible is to venture a little way past them into the impossible
--- Clarke's Second Law
-
----
-# Typical REST API
+# REST APIs
 
 ![](rest-api.png)
 
----
-# [Fit] Internal APIs
-# [Fit] tightly coupled
-# [Fit] to clients
+^ We've probably all used a RESTful API
+^ Most of us have built at least one
 
 ---
 # [Fit] REST is great
@@ -47,22 +54,45 @@
 ^ URL based (easy to develop against/debug)
 
 ---
-# [Fit] REST
-# [Fit] is *hard*
-# [Fit] in practice
+# Cargo Cult?
 
-^ Big upfront design required
-^ Hard to get right
-^ Hard to change (versioning problems)
-^ Maintainability issues
-^ No one true way to do REST (Swagger)
+![](cargo-cult1.jpg)
+
+^ Describe what a cargo cult is
+^ Cargo Cults still practice today in Tanna, Vanuatu
+^ REST is a given
+^ We use REST without thinking about it
 
 ---
-# [Fit] Overfetching 
-# [Fit] Underfetching
+# [Fit] REST is *hard*
+
+^ Big upfront design required
+^ Hard to model certain domains
+^ Hard to change (versioning problems)
+^ Maintainability issues
+^ No one true way to do REST (Swagger/OpenAPI)
+
+---
+# Common Problems
+
+## Overfetching 
+## Underfetching
 
 ^ Need to anticipate all current and future clients and their needs
 ^ Badly designed APIs can significantly hamper the design of great frontends
+
+---
+# [Fit] Internal APIs
+# [Fit] tightly coupled
+# [Fit] to clients
+
+^ REST works well for loosely couple external APIs
+^ Tightly coupled internal APIs can be better
+
+---
+# GraphQL 
+
+![](graphql-api.png)
 
 ---
 # What is GraphQL?
@@ -70,25 +100,24 @@
 * Language for defining types & queries
 * Developed by Facebook in 2012
 * Used to improve mobile app performance
-* Serves 300 billion requests per day
+* Serves **300 billion** requests per day
 
 ---
-# GraphQL is Open Source
+# Open Source
 
-* Open source version published in July 2015
-* Relay released in August 2015
-* Specification: https://facebook.github.io/graphql
+* Open sourced in **July 2015**
+* Specification  **facebook.github.io/graphql**
+* Reference Implementation **github.com/graphql/graphql-js**
+* Relay released in **August 2015**
 
 ---
-# Lots of implementions
+# GraphQL Server Implementations
 
 - JavaScript reference
-- Ruby
-- Python
-- Java / Scala
-- Go
-- Elixir
-- ...
+- Ruby / Python / PHP
+- Java / Scala (Sangria)
+- .NET
+- Elixir / Go / Haskell
 
 ---
 # GraphQL Highlights
@@ -99,9 +128,6 @@
   - transport
   - message protocol
   - data store
-
----
-![fit](graphql-api.png)
 
 ---
 # Exhibit A: REST API
@@ -124,7 +150,7 @@ or
 {                                     "data": {
   user(id: 1) {                         "user": {
     name                                  "name": "Josh",
-    friends(first: 2) {                     "friends": [{
+    friends(first: 1) {                     "friends": [{
       name                                  "name": "James"
     }                                     }]  
   }                                     }  
@@ -132,84 +158,130 @@ or
 ```
 
 ---
-# Key
-# features
+# Mental
+# Model
+
+^ Easy to write and reason about queries
+
+^ Same shape as resulting data
 
 ---
 # Strongly
 # typed
 
----
-# Single
-# endpoint
+^ code generation possibilities
+
+^ validation of queries 
+
+^ guarantee correct results
+
+^ possibility for great tooling
 
 ---
 # Single
-# query
+# Endpoint 
+
+^ Simpler, no URLs
 
 ---
-# Self documenting
+# Single
+# Query
 
 ---
-# [fit] Performance
+# Unambiguous
+# Queries
 
-^ * Major bandwidth/latency reduction from overfetching and N+1 HTTP roundtrips
-
----
-
-# [fit] Ecosystem
-# [fit] Evolving
-# [fit] Quickly
+^ Queries must define all data requested ie every field
 
 ---
-# Many Server Implementations
+# Consumer
+# Driven
+# Contracts
 
-- Javascript (reference)
-- Ruby/Python/PHP
-- Java, Sangria (Scala), 
-- .NET
-- Elixir
+^ APIs understand client usage through queries
 
----
-# Client Frameworks
-
-- Relay (React)
-- ApolloStack Client
-  + React + Native
-  + Angular 2
-  + Redux support
-- Lokka
+^ Easier to evolve a service without versioning
 
 ---
-# Simple Schema
+# Less
+# Versioning 
 
-```elixir
-type QueryRoot {
-  greeting: String
+^ Problem with REST APIs is adding fields. Field additions bloat all existing clients
+
+^ Versioning is required in REST 
+
+^ Facebook still has 4 year old clients which work on the same version
+
+---
+# Self
+# Documenting
+
+^ Just add descriptions to types and fields
+
+^ Deprecation and reason supported
+
+---
+# Performance
+
+^ Major bandwidth/latency reduction from overfetching and N+1 HTTP roundtrips
+
+---
+# Schema
+
+```js
+type Query {
+  me: User
+  user(id: Int): User
+}
+
+type User {
+  name: String
+  profilePicture(size: Int = 50): ProfilePicture
+  friends(first: Int, orderBy: FriendOrder): [User]
+  events(first: Int): [Event]
+}
+
+enum FriendOrder { FIRST_NAME, LAST_NAME, IMPORTANCE }
+```
+
+---
+# Schema (continued)
+
+```js
+type ProfilePicture {
+  width: Int
+  height: Int
+  url: String
+}
+
+type Event {
+  name: String
+  attendees(first: Int): [User]
 }
 ```
 
 ---
 # Simple Query
 
-### Query
-
-```js
-{ greeting }
+```json
+{                                                                
+  me {                                                                
+    name                                                                
+  }                                                                
+}                                                                
 ```
 
-### JSON response
 
-```js
+```json
 {
   "data": {
-    "greeting": "Hello, World!"
+    "name": "Josh Price"
   }
 }
 ```
 
 ---
-# Schema with Data Fetching
+# Schema with Resolver functions
 
 ```elixir
 @items %{"a" => %{id: "a", name: "Foo"}, "b" => %{id: "b", name: "Bar"}}
@@ -271,45 +343,58 @@ app.listen(3000);
 ```
 
 ---
-# [fit] GraphiQL
-# [fit] Demo
+# GraphiQL
 
 ---
-# GraphQL Shim
 
-* Wrap a REST API by calling  
+# GraphQL Ecosystem
+# Evolving Quickly
+
+---
+# Client Frameworks
+
+- Relay (React)
+- ApolloStack Client
+  + React + Native
+  + Angular 2
+  + Redux support
+- Lokka
 
 ---
 # GraphQL CATS
 
 - Compatibility Acceptance Tests
 - YAML specs for cross-implementation compatibility
-
-# Demo
+- Makes it easier to implement spec correctly
 
 ---
-# Arbitrary Queries
+# Gotchas
 
-- 
+- Arbitrary Queries
+  - Could be slow if deeply nested
+  - Complexity analysis
+  - Query depth
+- Batching at resolver
 
 ---
 # When to use?
 
-- Don't allow arbitrary queries from unknown clients
+- Use for internal APIs
+- Improve mobile (and desktop performance)
 - Use when you have 
 
 ---
 # Early Days
 
-- 
+- Don't allow arbitrary queries from unknown clients
 
 
 ---
 # GraphQL Backend as a Service
 
-- Reindex
-- Graph.cool
-- 
+- reindex.io
+- graph.cool
+- scaphold.io
 
 ---
 # Future - GraphQL Spec
@@ -323,12 +408,10 @@ app.listen(3000);
 ---
 # Resources
 
-* Website
-  - http://graphql-elixir.org
-* Plug (Hex: plug_graphql)
-  - https://github.com/graphql-elixir/plug_graphql
-* Examples
-  - https://github.com/graphql-elixir/hello_phoenix_graphql
+* Website http://graphql.org
+* Resources
+  - github.com/graphql/graphql-js
+  - github.com/graphql/express-graphql
 
 
 ---
