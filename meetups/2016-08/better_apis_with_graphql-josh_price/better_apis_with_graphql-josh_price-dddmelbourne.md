@@ -263,7 +263,7 @@ type Event {
 ---
 # Simple Query
 
-```json
+```js
 {                                                                
   me {                                                                
     name                                                                
@@ -272,7 +272,7 @@ type Event {
 ```
 
 
-```json
+```js
 {
   "data": {
     "name": "Josh Price"
@@ -281,47 +281,39 @@ type Event {
 ```
 
 ---
+# User Type
+
+```js
+type User {
+  name: String
+  profilePicture(size: Int = 50): ProfilePicture
+  friends(first: Int, orderBy: FriendOrder): [User]
+}
+```
+
+---
 # Schema with Resolver functions
 
-```elixir
-@items %{"a" => %{id: "a", name: "Foo"}, "b" => %{id: "b", name: "Bar"}}
-
-%Schema{
-  query: %ObjectType{
-    fields: %{
-      item: %{
-        type: %Item{},
-        args: %{id: %{type: %String{}}},
-        resolve: fn(_, %{id: id}, _) -> Map.get(@items, id) end
-      }
+```js
+new GraphQLObject({
+  type: "User",
+  fields: {
+    name(user) {
+      return user.name
+    },
+    profilePicture(user, {size}) {
+      return getProfilePicForUser(user, size);
+    },
+    friends(user) {
+      return user.friendIDs.map(id => promiseUser(id));
     }
   }
-}
+});
 ```
+
 
 ---
-# Query
-
-```js
-{
-  item(id: "a") {
-    id
-    name
-  }
-}
-```
-
----
-# JSON Response
-
-```js
-{
-  "data": {
-    "id": "a",
-    "name": "Foo"
-  }
-}
-```
+# Connecting GraphQL to the View
 
 ---
 # Setup GraphQL Express
@@ -345,15 +337,119 @@ app.listen(3000);
 ---
 # GraphiQL
 
----
-
-# GraphQL Ecosystem
-# Evolving Quickly
 
 ---
-# Client Frameworks
+# Mutations write data
 
-- Relay (React)
+```js
+mutation {
+  acceptFriendRequest(userId: 345124) {
+    user {
+      friends { count }
+    }
+  }
+}
+```
+
+```js
+mutation {
+  rsvpToEvent(eventId: 134624, status: ATTENDING) {
+    event {
+      invitees { count }
+      attendees { count }
+    }
+  }
+}
+```
+
+^ Mutations call a function and return data that may have changed
+
+---
+# CQRS
+
+- Reads and writes are separate
+- Naturally supports Command / Query split
+
+---
+# Queries with Fragments
+
+```js
+query {
+  event(id: 123) {
+    ...attendeeList
+  }
+}
+
+fragment profilePic on User {
+  profilePicture { width, height, url }
+}
+
+fragment personRow on User {
+  ...profilePic
+  name
+}
+
+fragment attendeeList on Event {
+  attendees {
+    ...personRow
+  }
+}
+```
+
+---
+# View Components
+
+```js
+fragment profilePic on User {
+  profilePicture {
+    width
+    height
+    url
+  }
+}
+```
+
+```js
+function ProfilePic(props) {
+  const pic = props.data.profilePic
+  return <img width={pic.width} height={pic.height} src={pic.url} />
+}
+```
+
+---
+# Component Hierarchy
+
+```js
+fragment personRow on User {
+  ...profilePic
+  name
+}
+```
+
+```js
+function PersonRow(props) {
+  const data = props.data
+  return (
+    <div>
+      <ProfilePic data={data} />
+      <span>{data.name}</span>
+    </div>
+  );
+}
+```
+
+---
+# Relay
+
+- Each view component declares data reqts
+- Relay batches render tree 
+- Sends single query
+- Handles caching
+- Relies on schema convention
+
+---
+# o
+
 - ApolloStack Client
   + React + Native
   + Angular 2
@@ -388,6 +484,9 @@ app.listen(3000);
 
 - Don't allow arbitrary queries from unknown clients
 
+---
+# GraphQL Ecosystem
+# Evolving Quickly
 
 ---
 # GraphQL Backend as a Service
