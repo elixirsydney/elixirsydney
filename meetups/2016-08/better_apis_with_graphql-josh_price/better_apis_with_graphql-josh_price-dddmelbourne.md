@@ -40,26 +40,34 @@
 
 ![](rest-api.png)
 
-^ We've probably all used a RESTful API
+^ We've probably all used a RESTful API before
+
 ^ Most of us have built at least one
 
 ---
 # [Fit] REST is great
 
-^ Simple
-^ (Mostly) well understood
+^ Simple,  (Mostly) well understood
+
 ^ APIs work like the web does
+
 ^ Lots of tooling
+
 ^ Designed for **very** loose coupling
+
 ^ URL based (easy to develop against/debug)
 
 ---
 # [Fit] REST is *hard*
 
 ^ Big upfront design required
+
 ^ Hard to model certain domains
+
 ^ Hard to change (versioning problems)
+
 ^ Maintainability issues
+
 ^ No one true way to do REST (Swagger/OpenAPI)
 
 ---
@@ -68,9 +76,10 @@
 ![](cargo-cult1.jpg)
 
 ^ Describe what a cargo cult is
+
 ^ Cargo Cults still practice today in Tanna, Vanuatu
-^ REST is a given
-^ We use REST without thinking about it
+
+^ REST is a sensible default but we use REST without thinking about it
 
 ---
 # Common Problems
@@ -87,6 +96,7 @@
 # to their clients
 
 ^ REST works well for loosely couple external APIs
+
 ^ Tightly coupled internal APIs can be better
 
 ---
@@ -100,14 +110,16 @@
 * Language for defining types & queries
 * Developed by Facebook in 2012
 * Used to improve mobile app performance
-* Serves **300 billion** requests per day
+* Serves **300 billion+** requests per day
 
 ---
 # Open Source
 
 * Open sourced in **July 2015**
-* Specification  **facebook.github.io/graphql**
-* Reference Implementation **github.com/graphql/graphql-js**
+* Specification
+  - **facebook.github.io/graphql**
+* Reference Implementation
+  - **github.com/graphql/graphql-js**
 * Relay released in **August 2015**
 
 ---
@@ -439,29 +451,23 @@ function PersonRow(props) {
 ```
 
 ---
-# Relay
+# Relay (TL;DR)
 
-- Each view component declares data reqts
-- Relay batches render tree 
+- Each view component declares query
+- Relay batches current render tree 
 - Sends single query
-- Handles caching
-- Relies on schema convention
+- Handles caching using global IDs
+- Relies on schema conventions for metadata
 
 ---
-# o
+# Client-Side Alternatives
 
 - ApolloStack Client
   + React + Native
   + Angular 2
   + Redux support
 - Lokka
-
----
-# GraphQL CATS
-
-- Compatibility Acceptance Tests
-- YAML specs for cross-implementation compatibility
-- Makes it easier to implement spec correctly
+  - Simple
 
 ---
 # Gotchas
@@ -471,6 +477,7 @@ function PersonRow(props) {
   - Complexity analysis
   - Query depth
 - Batching at resolver
+- You can control this internally
 
 ---
 # When to use?
@@ -485,6 +492,10 @@ function PersonRow(props) {
 # GraphQL Ecosystem
 # Evolving Quickly
 
+^ It's been a year and there was a flurry of activity
+
+^ Many exciting tools are appearing and I can barely keep up
+
 ---
 # GraphQL Backend as a Service
 
@@ -496,10 +507,15 @@ function PersonRow(props) {
 # Future - GraphQL Spec
 
 * Push: Apps should reflect current state of world
-* Subscriptions + Phoenix channels + RethinkDB
+* Subscriptions + Reactive Backend + RethinkDB
 * Defer 
 * Stream
 * Live queries
+* GraphQL CATS
+
+^ YAML specs for cross-implementation compatibility
+
+^ Makes it easier to implement spec correctly
 
 ---
 # Resources
@@ -512,7 +528,4 @@ function PersonRow(props) {
 
 ---
 # Questions?
-
----
-![](api-gateway.png)
 
