@@ -91,6 +91,8 @@
 
 ^ Badly designed APIs can significantly hamper the design of great frontends
 
+^ N + 1 HTTP requests
+
 ---
 # Internal APIs
 # are tightly coupled
@@ -98,7 +100,7 @@
 
 ^ REST works well for loosely couple external APIs
 
-^ Tightly coupled internal APIs can be better
+^ Tightly coupled internal APIs don't work so well for REST
 
 ---
 # GraphQL 
@@ -517,6 +519,141 @@ function PersonRow(props) {
 ^ YAML specs for cross-implementation compatibility
 
 ^ Makes it easier to implement spec correctly
+
+---
+# Subscriptions
+
+```js
+subscription {
+  createCommentSubscribe(id: $id) {
+    comment {
+      ...FBCommentFragment
+    }
+  }
+}
+```
+
+^ In production at Facebook
+
+^ Looks like a mutation
+
+^ Subscribes to update topic in pub-sub backend
+
+^ Kinda complicated but super exciting
+
+^ Yanked from early version of spec
+
+---
+# Defer (Experimental)
+
+```js
+{                                     { 
+  feed {                                "feed": {
+    stories {                             "stories": [{
+      author { name }                       "author": { "name": "Lee Byron" },
+      title                                 "title": "GraphQL is the Future"
+      comments @defer {                   }, {
+        author { name }                     "author": { "name": "Josh Price" },
+        message                             "title": "REST is old school"
+      }                                   }]
+    }                                   } 
+  }                                   }  
+}                                    
+```
+
+^ Allows rendering of all stories immediately
+
+^ Comments come in the next request
+
+---
+# Defer - Comments arrive
+
+```js
+{                                  { 
+  feed {                             "path": ["feed", "stories", 0, "comment"]
+    stories {                        "data": [{
+      author { name }                  "author": { "name": "Joe Bloggs" },
+      title                            "comment": "That blew my mind!"
+      comments @defer {              }, {
+        author { name }                "author": { "name": "Jenny Savage" },
+        comment                        "comment": "I love it"
+      }                              }]
+    }                              } 
+  }                                  
+}                                    
+```
+
+---
+# Stream (Experimental)
+
+```js
+{                                     { 
+  feed {                                "feed": {
+    stories @stream {                     "stories": []
+      author { name }                   }
+      title                           }
+      comments @defer {               
+        author { name }               
+        comment                       
+      }                               
+    }                                 
+  }                                   
+}                                    
+```
+
+^ Streams each item in a list
+
+^ HTTP/2
+
+---
+# Stream - First Story
+
+```js
+{                                  { 
+  feed {                             "path": ["feed", "stories", 0]
+    stories @stream {                "data": [{
+      author { name }                  "author": { "name": "Joe Bloggs" },
+      title                            "title": "That blew my mind!"
+      comments @defer {              }]
+        author { name }            }  
+        comment                      
+      }                              
+    }                               
+  }                                  
+}                                    
+```
+
+^ Comments and further stories are patched in 
+
+---
+# Live (Experimental)
+
+```js
+{                                     { 
+  feed {                                "feed": {
+    stories {                             "stories": [{
+      author { name }                       "author": { "name": "Lee Byron" },
+      title                                 "title": "GraphQL is the Future",
+      likeCount @live                       "likeCount": 9
+    }                                     }] 
+  }                                     }
+}                                     }
+```
+
+---
+# Live - Likes update on backend
+
+```js
+{                                { 
+  feed {                           "path": ["feed", "stories", 0, "likeCount"],
+    stories {                      "data": 10
+      author { name }            }
+      title                      
+      likeCount @live            
+    }                            
+  }                              
+}                                
+```
 
 ---
 # Resources
