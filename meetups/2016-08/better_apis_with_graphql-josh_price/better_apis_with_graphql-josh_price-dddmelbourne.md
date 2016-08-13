@@ -75,6 +75,8 @@
 
 ![](cargo-cult1.jpg)
 
+^ Are we cargo culting REST?
+
 ^ WW2 Pacific Islands US forces brought a lot of planes and cargo
 
 ^ Cargo Cults still practice today in Tanna, Vanuatu
@@ -241,7 +243,11 @@ or
 ^ Major bandwidth/latency reduction from overfetching and N+1 HTTP roundtrips
 
 ---
-# Schema
+# Let's build our 
+# first Schema
+
+---
+# Query and Mutation Roots
 
 ```js
 type Query {
@@ -249,6 +255,16 @@ type Query {
   user(id: Int): User
 }
 
+type Mutation {
+  createPost(title: String!): Post
+  createComment(message: String!): Comment
+}
+```
+
+---
+# Object Types and Enums
+
+```js
 type User {
   name: String
   profilePicture(size: Int = 50): ProfilePicture
@@ -260,7 +276,7 @@ enum FriendOrder { FIRST_NAME, LAST_NAME, IMPORTANCE }
 ```
 
 ---
-# Schema (continued)
+# More Types
 
 ```js
 type ProfilePicture {
@@ -276,7 +292,7 @@ type Event {
 ```
 
 ---
-# Simple Query
+# Simplest Query
 
 ```js
 {                                                                
@@ -296,7 +312,30 @@ type Event {
 ```
 
 ---
-# User Type
+# Deeply Nested Query
+
+```js
+{                                      {                        
+  me {                                   "data": {                             
+    name                                   "name": "Josh Price",
+    profilePicture {                       "profilePicture": {
+      url                                    "url": "http://cdn/josh_50x50.png"
+    }                                      },
+    friends(first: 1) {                    "friends": [{
+      name                                   "name": "James Sadler"
+    }                                      }],
+    events(first: 1) {                     "events": [{
+      name                                   "name": "Afterparty!",
+      attendees(first: 1) {                  "attendees": [{
+        name                                   "name": "Jenny Savage"
+      }                                      }]
+    }                                      }]                          
+  }                                      }                          
+}                                      }                       
+```
+
+---
+# User Type (IDL)
 
 ```js
 type User {
@@ -307,7 +346,7 @@ type User {
 ```
 
 ---
-# Schema with Resolver functions
+# User Type with JS Resolvers 
 
 ```js
 new GraphQLObject({
@@ -327,33 +366,22 @@ new GraphQLObject({
 ```
 
 ---
-# Connecting GraphQL to the View
+# Resolvers
+
+- Your own functions
+- Could use in memory data
+- Call any data store
+- Call REST APIs
+- Call existing services
+- GraphQL doesn't care
+- Resolver "Middleware" (Auth, Logging, etc)
+
+^ only guarantee is that resolvers are run if matched
+
+^ Serverless
 
 ---
-# Setup GraphQL Express
-
-```js
-import { Schema } from './schema.js';
-import graphqlHTTP from 'express-graphql';
-import express from 'express';
-
-const app = express();
-
-app.get('/', function(req, res) {
-  res.redirect('/graphql');
-});
-
-app.use('/graphql', graphqlHTTP({ schema: Schema, graphiql: true }));
-
-app.listen(3000);
-```
-
----
-# GraphiQL
-
-
----
-# Mutations write data
+# Mutations Modify Data
 
 ```js
 mutation {
@@ -381,9 +409,40 @@ mutation {
 ---
 # CQRS
 
-- Reads and writes are separate
-- Naturally supports Command / Query split
-- Separate code paths if you need it
+^ Reads and writes are separate
+
+^ Naturally supports Command / Query split
+
+^ Separate code paths if you need it
+
+---
+# Setup GraphQL Express
+
+```js
+import { Schema } from './schema.js';
+import graphqlHTTP from 'express-graphql';
+import express from 'express';
+
+const app = express();
+
+app.get('/', function(req, res) {
+  res.redirect('/graphql');
+});
+
+app.use('/graphql', graphqlHTTP({ schema: Schema, graphiql: true }));
+
+app.listen(3000);
+```
+
+---
+# GraphiQL
+# Demo
+
+^ Show docs
+
+^ Show modifying queries
+
+^ Autocomplete and error checking
 
 ---
 # Queries with Fragments
@@ -410,6 +469,8 @@ fragment attendeeList on Event {
   }
 }
 ```
+
+^ Composition and reuse
 
 ---
 # View Components
@@ -454,13 +515,17 @@ function PersonRow(props) {
 ```
 
 ---
-# Relay (TL;DR)
+# Relay
 
 - Each view component declares query
 - Relay batches current render tree 
 - Sends single query
 - Handles caching using global IDs
 - Relies on schema conventions for metadata
+
+^ Don't have time to go into any detail
+
+^ Same concept applies to all client side frameworks
 
 ---
 # Client-Side Alternatives
@@ -481,6 +546,7 @@ function PersonRow(props) {
   - Query depth
 - Batching at resolver
 - You can control this internally
+- FB validates at dev time, query by ID
 
 ---
 # When to use?
@@ -488,7 +554,7 @@ function PersonRow(props) {
 - Use for internal APIs
 - Improve mobile (and desktop performance)
 - Buildkite has exposed a small external API
-- Be careful exposing this to the world
+- Be careful exposing this to the world!
 - Don't allow arbitrary queries from unknown clients
 
 ---
@@ -505,6 +571,12 @@ function PersonRow(props) {
 - reindex.io
 - graph.cool
 - scaphold.io
+
+^ New in last ~3 months
+
+^ Firebase, Parseapp closed system and didn't work
+
+^ GraphQL is an open spec (cf Meteor pivoting)
 
 ---
 # Future - GraphQL Spec
@@ -525,7 +597,7 @@ function PersonRow(props) {
 
 ```js
 subscription {
-  createCommentSubscribe(id: $id) {
+  createCommentSubscribe(storyId: $id) {
     comment {
       ...FBCommentFragment
     }
@@ -544,7 +616,11 @@ subscription {
 ^ Yanked from early version of spec
 
 ---
-# Defer (Experimental)
+# Warning!
+# **Experimental**
+
+---
+# Defer Directive
 
 ```js
 {                                     { 
@@ -554,7 +630,7 @@ subscription {
       title                                 "title": "GraphQL is the Future"
       comments @defer {                   }, {
         author { name }                     "author": { "name": "Josh Price" },
-        message                             "title": "REST is old school"
+        comment                             "title": "REST is old school"
       }                                   }]
     }                                   } 
   }                                   }  
@@ -584,7 +660,7 @@ subscription {
 ```
 
 ---
-# Stream (Experimental)
+# Stream Directive
 
 ```js
 {                                     { 
@@ -626,7 +702,7 @@ subscription {
 ^ Comments and further stories are patched in 
 
 ---
-# Live (Experimental)
+# Live Directive
 
 ```js
 {                                     { 
@@ -658,12 +734,16 @@ subscription {
 ---
 # Resources
 
-* http://graphql.org
-* https://github.com/graphql/graphql-js
-* https://github.com/graphql/express-graphql
-* Steve Luscher **Zero to GraphQL**
+* **graphql.org**
+* Github
+  * **graphql/graphql-js**
+  * **graphql/express-graphql**
+* Steve Luscher talk **Zero to GraphQL**
 * Awesome GraphQL (**chentsulin/awesome-graphql**)
 
 ---
 # Questions?
+
+---
+# Thanks!
 
