@@ -4,6 +4,8 @@
 ### github.com/joshprice
 ### @joshprice
 
+^ Hi everyone, my name is Josh
+
 ^ It's great to be here. It's my first time at a DDD conference
 
 ^ Thanks for voting for my talk
@@ -23,6 +25,7 @@
 ---
 # Experience: GraphQL Elixir
 
+- Motivation: Pain with REST APIs
 - Mainly as a way to learn Elixir and GraphQL
 - First major open source project
 - I've learned a lot
@@ -112,7 +115,7 @@
 ---
 # What is GraphQL?
 
-* Language for defining types & queries
+* Language for defining schemas, types & queries
 * Developed by Facebook in 2012
 * Used to improve mobile app performance
 * Serves **300 billion+** requests per day
@@ -135,10 +138,12 @@
 - Java / Scala (Sangria)
 - .NET
 - Elixir / Go / Haskell
+- etc...
 
 ---
-# GraphQL Highlights
+# GraphQL Misconceptions
 
+* It's not really about "graphs"
 * It's a *specification* for client/server interaction
 * Language independent
 * Assumes nothing about:
@@ -175,12 +180,17 @@ or
 ```
 
 ---
+# Better
 # Mental
 # Model
 
 ^ Easy to write and reason about queries
 
 ^ Same shape as resulting data
+
+^ Easy for client developers to understand
+
+^ No impedance mismatch between view and server
 
 ---
 # Strongly
@@ -198,11 +208,13 @@ or
 # Single
 # Endpoint 
 
-^ Simpler, no URLs
+^ Simpler, no URL structure to remember
 
 ---
 # Single
 # Query
+
+^ Fetch exactly the required data in one call 
 
 ---
 # Unambiguous
@@ -210,10 +222,18 @@ or
 
 ^ Queries must define all data requested ie every field
 
+^ In REST as fields are added, old clients get bloated
+
+^ Clients always get only needed data
+
 ---
 # Consumer
 # Driven
 # Contracts
+
+^ CDC came from SOAP/XML contracts
+
+^ View reqts drive the API
 
 ^ APIs understand client usage through queries
 
@@ -223,7 +243,9 @@ or
 # Less
 # Versioning 
 
-^ Problem with REST APIs is adding fields. Field additions bloat all existing clients
+^ Problem with REST APIs is adding fields
+
+^ Field additions bloat all existing clients
 
 ^ Versioning is required in REST 
 
@@ -235,7 +257,7 @@ or
 
 ^ Just add descriptions to types and fields
 
-^ Deprecation and reason supported
+^ Deprecation and reason supported, helps evolve API
 
 ---
 # Performance
@@ -249,7 +271,7 @@ or
 ---
 # Query and Mutation Roots
 
-```js
+```capnp
 type Query {
   me: User
   user(id: Int): User

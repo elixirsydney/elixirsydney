@@ -3,7 +3,6 @@
 ## Learn Stuff
 ### September 2016
 
-
 ---
 * **What's been happening?**
 * **Elixir Together** Build amazing things
@@ -34,7 +33,7 @@ Thanks Pivotal for hosting!
 # Housekeeping
 
 * Twitter handle (@ElixirSydney)
-* Logo!
+* We have a logo!
 * Official slack (View Source #elixir or Elixir #sydney)
   - AUNZ-elixir
 * There is a repo to hold all talks but it needs a frontend
