@@ -13,16 +13,18 @@ footer: © Josh Price, 2016
 # What is a Plug?
 ---
 ### Specification for
-## *composable modules*
-### between web apps
+### *composable modules*
+### between
+## web apps
 ---
 ## *Connection adapter*
 ### for web servers
 ### in the Erlang VM
 ---
-## So a lot like
-## *Rack*
-## really
+## Imagine
+## *Rack* and *Sinatra* 
+## got married
+## (sort of)
 ---
 ## *Phoenix* is based heavily on Plugs
 ---
@@ -30,6 +32,7 @@ footer: © Josh Price, 2016
 ### (Almost)
 ---
 # 2 types
+
 * Function
 * Module
 
@@ -82,6 +85,25 @@ iex(9)> %Plug.Conn{}
  resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}],
  scheme: :http, script_name: [], secret_key_base: nil, state: :unset,
  status: nil}
+```
+
+---
+```elixir
+iex(9)> %Plug.Conn{}
+%Plug.Conn{
+  halted: false,
+  host: "www.example.com",
+  method: "GET",
+  params: %Plug.Conn.Unfetched{aspect: :params}, 
+  port: 0, 
+  query_params: %Plug.Conn.Unfetched{aspect: :query_params},
+  query_string: "",
+  req_headers: [],
+  request_path: "",
+  resp_body: nil,
+  resp_headers: [{"cache-control", "max-age=0, private, must-revalidate"}],
+  scheme: :http
+  status: nil}
 ```
 ---
 # Module plug

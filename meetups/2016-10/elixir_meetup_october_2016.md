@@ -17,7 +17,9 @@
 
 Elixir Sydney is over a year old!
 
-Started?
+Started in July 2015, 1.3 years old
+
+Time flies!
 
 ---
 # Thanks
