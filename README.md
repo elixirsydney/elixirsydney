@@ -9,11 +9,13 @@ Just the slides for now, but we can easily add a static site using github pages.
 Happy hacking,
 Josh
 
-# Future Talk ideas
+# Future Talk Ideas
 
 - Volunteers?
-- Pretty please
+- Pretty please!
 - How can we encourage more speakers?
+
+## Topic list
 
 - Supervisor trees / OTP process design (Nick Gunn)
 - Keep going with beginner focussed talks
