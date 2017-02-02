@@ -2,7 +2,7 @@
 
 A repo to store all the slides and resources from the Sydney Elixir Meetups.
 
-Open a PR with your slides for past meetups or a talk proposal for future ones.
+Open a PR with your slides for past meetups or open an issue with a talk proposal.
 
 Just the slides for now, but we can easily add a static site using github pages.
 
@@ -11,28 +11,38 @@ Josh
 
 # Future Talk Ideas
 
-- Volunteers?
-- Pretty please!
-- How can we encourage more speakers?
+- Want to hear a topic?
+- Want to show off a project you've been working on?
+- Want to share some interesting tips or tricks?
+- Want to explore a library in more depth?
+- Know something about anything in the topic list below? 
 
-## Topic list
+Please open a new Github issue on this repo.
 
-- Supervisor trees / OTP process design (Nick Gunn)
-- Keep going with beginner focussed talks
-- Phoenix more in depth
-- Collaborative text editor CRDTs (James Sadler)
-- Practical project colloborative exercise (OTP)
-    - Build the sydney website
-- Exercism homework
+## Topics People want 
+
+- More beginner focussed talks
+- Phoenix more in depth, Phoenix specifics
 - Ecto (2.1)
 - OTP part 2 (in depth)
-- Libraries people are using
-- Nerves workshop! (Andrew H)
-- Phoenix specifics
-- Authentication (JWT) (Sunil)
+    - distributed architectural patterns
+    - Distributed Elixir
 - Dealing with dependencies
-- Distributed Elixir
 - Elixir Deployment
+
+## Proposed Topics
+
+- Nerves workshop! (Andrew H)
 - Neural Nets implemented with Erlang Processes (Josh)
+- Collaborative text editor CRDTs (James Sadler)
 - Cool BEAM (James)
 - Elm (igas)
+
+## Other Non-Talk Ideas
+
+- Practical project colloborative exercise (OTP)
+    - Build the sydney website
+- Exercism homework and discussion
+- Libraries people are using
+- Mob coding
+- Book club - reading and discussion
