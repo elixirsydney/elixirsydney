@@ -22,8 +22,6 @@ Please open a new Github issue on this repo.
 ## Topics People want 
 
 - More beginner focussed talks
-- Phoenix more in depth, Phoenix specifics
-- Ecto (2.1)
 - OTP part 2 (in depth)
     - distributed architectural patterns
     - Distributed Elixir
@@ -32,7 +30,6 @@ Please open a new Github issue on this repo.
 
 ## Proposed Topics
 
-- Nerves workshop! (Andrew H)
 - Neural Nets implemented with Erlang Processes (Josh)
 - Collaborative text editor CRDTs (James Sadler)
 - Cool BEAM (James)
@@ -46,3 +43,11 @@ Please open a new Github issue on this repo.
 - Libraries people are using
 - Mob coding
 - Book club - reading and discussion
+
+## Topics we already covered
+
+- 1.4 process registry
+- JWT
+- Nerves workshop! (Andrew H)
+- Phoenix more in depth, Phoenix specifics
+- Ecto (2.1)
