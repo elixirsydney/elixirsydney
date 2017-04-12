@@ -22,7 +22,7 @@ footer: © Josh Price, 2016
 ### in the Erlang VM
 ---
 ## Imagine
-## *Rack* and *Sinatra* 
+## *Rack* and *Sinatra*
 ## got married
 ## (sort of)
 ---
@@ -44,21 +44,21 @@ footer: © Josh Price, 2016
 * returns a connection
 
 ```elixir
-    (Plug.Conn.t, Plug.opts) :: Plug.Conn.t
+(Plug.Conn.t, Plug.opts) :: Plug.Conn.t
 
-    def p(conn, _opts) do
-        conn |> do_something
-    end
+def p(conn, _opts) do
+  conn |> do_something
+end
 ```
 
 ---
 What is `Plug.Conn`?
 
 ```elixir
-    %Plug.Conn{
-        host: "www.example.com",
-        path_info: ["bar", "baz"],
-        ...}
+%Plug.Conn{
+  host: "www.example.com",
+  path_info: ["bar", "baz"],
+  ...}
 ```
 
 ---
@@ -94,8 +94,8 @@ iex(9)> %Plug.Conn{}
   halted: false,
   host: "www.example.com",
   method: "GET",
-  params: %Plug.Conn.Unfetched{aspect: :params}, 
-  port: 0, 
+  params: %Plug.Conn.Unfetched{aspect: :params},
+  port: 0,
   query_params: %Plug.Conn.Unfetched{aspect: :query_params},
   query_string: "",
   req_headers: [],
