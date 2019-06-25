@@ -1,23 +1,55 @@
-# Phoenix 1.3
-## Past, Present and Future
+# Plugs and Phoenix 1.3
+## Building Web Applications
 ## @joshprice
 
 ---
 # Survey
 
-- Who has used Phoenix before?
-- Who has a Phoenix app in production?
-- Who has played around with 1.3-rc?
+- Who knows how browsers fetch web pages?
+- Who knows how HTTP works at basic level?
+- Who's heard of GET or a POST?
+- Who has used Phoenix before? Rails? Other web Framework?
+
+---
+# Please ask Questions
+
+- Don't know what a word means?
+- This is going to be really hard
+- Esp. if I try to explain things in words you don't understand
+
+---
+# How Browsers Work
+
+- Client: Your Web Browser (Safari, Chrome, Firefox)
+- Server: The computer that receives your "request"
+- Client sends Request to Server
+- Server responds with
+  - HTML (doc structure)
+  - CSS (styling)
+  - images, etc
+
+---
+# How a Web Request works
+
+- Go to http://google.com
+- Type in a search term `elixir phoenix`
+- Browser sends `HTTP/1.1 GET http://google.com/?q=elixir+phoenix`
+- Google looks in its index (a big key-value map) for results
+- Google renders results into an HTML View
+- Google sends HTTP response containing HTML
+- HTML asks for CSS, JavaScript, Images, etc
+- Browser displays HTML page
 
 ---
 # Phoenix
 
-- Elixir Web Framework
+- Elixir Web Framework (like Rails or Django or Express)
+  - Bunch of handy Elixir functions for dealing with web requests
 - Based entirely on Plug:
-  eg `Controller`, `Action`, `Router`, `Endpoint`
+  - eg `Controller`, `Action`, `Router`, `Endpoint`
 - Gains most of it's flexibility from `Plug`
 - Phoenix web apps are `Plug`s themselves
-- Mostly a bunch of convenience macros over `Plug`
+- Mostly a bunch of convenience functions over `Plug`
 
 ---
 # Why is Phoenix so AWESOME?
@@ -26,7 +58,9 @@
 - Simple
 - Robust
 - Embraces and extends `Plug`
-- Familiar to Rails Refugee
+- Familiar to anyone who's used Rails
+- Takes care of the low level web communication
+- So you can concentrate on your application
 
 ---
 # aka "Rails the Good Parts"
@@ -40,8 +74,26 @@
 Plugs are simple:
 
 - Takes a `Plug.Conn` as `conn`
-- (maybe) Transform the `conn` or do something "side-effecty"
+- (maybe) Transform the `conn` or do some "side-effects"
+  - log what happened
+  - save/read something from database
 - Returns a new `Plug.Conn`
+  - cannot "edit" it because of Immutability
+
+---
+# Plug.Conn
+
+- Encapsulates everything about a single web request
+  - HTTP Request (what the browser sends to the server)
+  - HTTP Response (the web page that is sent back)
+  - Headers, Cookies, etc
+
+---
+# Plug.Conn is just a big Map
+
+- or struct
+- with lot's of keys and values
+- representing the full lifecycle of a web request/reponse
 
 ---
 # Function Plug Example
@@ -55,9 +107,9 @@ end
 ```
 
 ```elixir
-def json_header_plug(conn, _opts) do
+def html_header_plug(conn, _opts) do
   conn
-  |> put_resp_content_type("application/json")
+  |> put_resp_content_type("text/html")
 end
 ```
 
@@ -455,9 +507,9 @@ end
 ---
 # WARNING
 
-## Still Release Candidate (1.3-rc.1)
+## 1.3 Just Released Today
 
-## Upgrade at your own risk
+## Documentation/ might be out of date
 
 ## Things might change
 
