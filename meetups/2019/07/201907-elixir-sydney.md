@@ -15,18 +15,18 @@ Welcome to Elixir Sydney
 ---
 
 # **_Tonight_**
-# [fit] *- Welcome new faces*
-# [fit] *- Talks*
-# [fit] *- Events / Tips / Jobs*
-# [fit] *- Hangout*
+# [fit] *Welcome new faces*
+# [fit] *Talks*
+# [fit] *Events / Tips / Jobs*
+# [fit] *Hangout*
 
 ---
 
 # **_Housekeeping_**
-# [fit] *- Bathrooms*
-# [fit] *- Emergency Exits*
-# [fit] *- Hot food*
-# [fit] *- Glass bottles*
+# [fit] *Bathrooms*
+# [fit] *Emergency Exits*
+# [fit] *Hot food*
+# [fit] *Glass bottles*
 
 ^
 - Location of bathrooms
@@ -58,8 +58,9 @@ Welcome to Elixir Sydney
 
 ![left](https://www.dropbox.com/s/zubqzaxnozem4eu/robin-hilliard.jpg?dl=1)
 
-# [fit] **_X-Plane_**
-# [fit] *Follow up*
+# [fit] **_Ladies and Gentlemen!_**
+# [fit] *This is Your*
+# [fit] **_#PID<0.41.0>_** *Speaking*
 # [fit] **_Robin Hilliard_**
 # [fit] *`@robinhilliard`*
 
@@ -109,7 +110,7 @@ So if you're new to Elixir Sydney can you please put up your hand, don't worry w
 # [fit] *Next Meetup's* **_Exercism_**
 # [fit] **_Isogram_**
 
-# [fit] *`exercism download --exercise=isogram --track=ruby`*
+# [fit] *`exercism download --exercise=isogram --track=elixir`*
 
 ---
 
