@@ -115,9 +115,8 @@ Alembic is our food sponsor tonight. Alembic are a consultancy specialising in E
 ---
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] *`@robinmiller`*
-# [fit] *`@danieldraper`*
-# [fit] *`@paulfioravanti`*
+# [fit] *`@robinmiller` **_/_** `@filterfish`*
+# [fit] *`@danieldraper` **_/_** `@paulfioravanti`*
 # [fit] **_`@elixirsydney`_**
 
 ^
