@@ -68,6 +68,17 @@ Welcome to Elixir Sydney
 [.hide-footer]
 [.slidenumbers: false]
 
+![right](https://www.dropbox.com/s/0pdz4rwrog9bcve/richard-heycock.jpg?dl=1)
+
+# [fit] *How to* **_debug_**
+# [fit] *a* **_running process_**
+# [fit] **_Richard Heycock_**
+# [fit] *`@filterfish`*
+
+---
+[.hide-footer]
+[.slidenumbers: false]
+
 ![left](https://www.dropbox.com/s/spbd9sooaurw0gf/daniel-draper.jpg?dl=1)
 
 # [fit] *Why does* **_diversity_**
