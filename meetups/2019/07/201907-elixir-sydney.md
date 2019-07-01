@@ -35,9 +35,20 @@ Welcome to Elixir Sydney
 
 ---
 
+# [fit] *Thanks to our*
+# [fit] **_Sponsors_**
+
+^
+First of all, I'd just like to thank our sponsors, who help make Elixir Sydney as objectively awesome as it is.
+
+---
+
 # [fit] *Thanks to our* **_Sponsors_**
 
 ![inline](https://www.dropbox.com/s/12axdzqavv5w8z2/expert360-logo.png?dl=1)
+
+^
+You are currently at Expert360, our venue and drinks sponsor tonight. Expert360 is a professional marketplace and management platform powering the project economy.
 
 ---
 
@@ -46,6 +57,9 @@ Welcome to Elixir Sydney
 <br />
 
 ![inline](https://www.dropbox.com/s/a3352nwrtqb7pq3/alembic-logo.jpg?dl=1)
+
+^
+Alembic is our food sponsor tonight. Alembic are a consultancy specialising in Elixir, GraphQL.
 
 ---
 
