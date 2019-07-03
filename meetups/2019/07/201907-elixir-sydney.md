@@ -5,7 +5,8 @@ slidenumbers: true
 [.slidenumbers: false]
 
 # [fit] **_Elixir Sydney_**
-# [fit] *3 July 2018*
+# [fit] *:airplane: Aerobatics and Diversity*
+# [fit] **_3 July 2018_**
 
 ![](https://www.dropbox.com/s/jw8j3i2b55hxksp/elixir-sydney.jpg?dl=1)
 
@@ -59,7 +60,7 @@ You are currently at Expert360, our venue and drinks sponsor tonight. Expert360 
 ![inline](https://www.dropbox.com/s/a3352nwrtqb7pq3/alembic-logo.jpg?dl=1)
 
 ^
-Alembic is our food sponsor tonight. Alembic are a consultancy specialising in Elixir, GraphQL.
+Alembic is our food sponsor tonight. Alembic are a consultancy specialising in Elixir and GraphQL. If you need a hand with a project or API, let us know!
 
 ---
 
