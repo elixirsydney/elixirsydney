@@ -1,4 +1,4 @@
-theme: Scherzkeks, 2
+theme: Titillium, 4
 footer: @elixirsydney
 header: alignment(center)
 
@@ -218,7 +218,14 @@ For the sake of simplicity, the only contest prize is bragging rights. When the 
 # [fit] **`elixir.camp`**
 
 ^
-The site for Elixir Camp 4 is now live
+Elixir Camp is on from October 25 to 28, and tickets are selling fast so get yours now!<br />
+- Alembic will be sponsoring the opening and closing night BBQ.
+- Looking for more sponsors for:
+  - A coach from Sydney Central to Camp Wombaroo
+  - Diversity & student tickets
+  - T-Shirts and/or stickers
+  - Coffee
+  - Extra special snacks!
 
 ---
 [.slide-transition: push(right, 0.5)]
