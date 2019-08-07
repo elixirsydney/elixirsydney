@@ -226,6 +226,7 @@ Elixir Camp is on from October 25 to 28, and tickets are selling fast so get you
   - T-Shirts and/or stickers
   - Coffee
   - Extra special snacks!
+- We are also looking for speakers for talks!
 
 ---
 [.slide-transition: push(right, 0.5)]
