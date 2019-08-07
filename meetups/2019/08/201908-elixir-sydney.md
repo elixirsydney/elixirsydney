@@ -20,7 +20,7 @@ Welcome to Elixir Sydney
 # [fit] **Tonight**
 ## Welcome new faces
 ## Talks
-## Events / Tips / Jobs
+## News / Events / Jobs
 ## Hangout
 
 ---
@@ -213,7 +213,7 @@ For the sake of simplicity, the only contest prize is bragging rights. When the 
 ---
 [.slide-transition: move(left, 0.5)]
 
-# [fit] **Elixir Camp 4**
+# [fit] **Elixir Camp 5**
 # [fit] *October 25th - 28th, 2019*
 # [fit] **`elixir.camp`**
 
@@ -261,5 +261,6 @@ Elixir Camp is on from October 25 to 28, and tickets are selling fast so get you
 # [fit] *\(1st Wednesday of the month\)*
 
 ^
-The next meetup will be on the 4th of September, so we hope you enjoyed tonight so much that you'll want to come back again.
+The next meetup will be on the 4th of September, so we hope you enjoyed tonight so much that you'll want to come back again.<br />
+For anyone that wants to continue the conversation, feel free to come over to the Angel pub.<br />
 Please make sure to clean up after yourself and put your plates in the rubbish bins and empty bottles in the recycling bins. Thanks for coming along and we hope to see you next month!
