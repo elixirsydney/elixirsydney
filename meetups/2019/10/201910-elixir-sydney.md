@@ -164,6 +164,11 @@ something different, and who knows, you might even end up liking it and wanting 
 ---
 
 <br />
+# [fit] **News**
+
+---
+
+<br />
 # [fit] **Events**
 
 ---
