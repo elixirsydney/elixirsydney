@@ -17,7 +17,7 @@ Welcome to Elixir Sydney
 
 # [fit] **Tonight**
 ## Talks
-## Events / Jobs
+## News / Events / Jobs
 ## Hangout
 
 ---
@@ -97,7 +97,7 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
 # [fit] `@joshprice`
-# [fit] `@wtwillzy89`
+# [fit] `@twillzy89`
 # [fit] **`@elixirsydney`**
 
 ^
