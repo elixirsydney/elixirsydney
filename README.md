@@ -1,53 +1,22 @@
-# Sydney Elixir Meetups
+# <img src="./elixir-sydney-logo.jpg" align="left" height="40" /> The Elixir Sydney Meetup
 
-A repo to store all the slides and resources from the Sydney Elixir Meetups.
+## I want to submit or request a talk!
 
-Open a PR with your slides for past meetups or open an issue with a talk proposal.
+Awesome! :tada: Go check out the [issues page][] and submit your proposal
+or request there!
 
-Just the slides for now, but we can easily add a static site using github pages.
+## I want information about the current/next meetup!
 
-Happy hacking,
-Josh
+Check out the [Elixir Sydney Meetup page][] for all the info about future
+meetups, and [follow us on Twitter][ElixirSydney Twitter] for all the latest
+announcements!
 
-# Future Talk Ideas
+## I heard that there was something called Elixir Camp...?
 
-- Want to hear a topic?
-- Want to show off a project you've been working on?
-- Want to share some interesting tips or tricks?
-- Want to explore a library in more depth?
-- Know something about anything in the topic list below? 
+Yes, there is! It's loads of fun and you should absolutely go to the next one!
+Details are at the [Elixir Camp website][].
 
-Please open a new Github issue on this repo.
-
-## Topics People want 
-
-- More beginner focussed talks
-- OTP part 2 (in depth)
-    - distributed architectural patterns
-    - Distributed Elixir
-- Dealing with dependencies
-- Elixir Deployment
-
-## Proposed Topics
-
-- Neural Nets implemented with Erlang Processes (Josh)
-- Collaborative text editor CRDTs (James Sadler)
-- Cool BEAM (James)
-- Elm (igas)
-
-## Other Non-Talk Ideas
-
-- Practical project colloborative exercise (OTP)
-    - Build the sydney website
-- Exercism homework and discussion
-- Libraries people are using
-- Mob coding
-- Book club - reading and discussion
-
-## Topics we already covered
-
-- 1.4 process registry
-- JWT
-- Nerves workshop! (Andrew H)
-- Phoenix more in depth, Phoenix specifics
-- Ecto (2.1)
+[Elixir Camp website]: https://elixir.camp/
+[ElixirSydney Twitter]: https://twitter.com/ElixirSydney
+[Elixir Sydney Meetup page]: https://www.meetup.com/elixir-sydney/
+[issues page]: https://github.com/elixirsydney/elixirsydney/issues
