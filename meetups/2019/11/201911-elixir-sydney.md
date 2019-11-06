@@ -181,12 +181,12 @@ something different, and who knows, you might even end up liking it and wanting 
 
 ---
 
-# [fit] **Elixir 1.9.2**
+# [fit] **Elixir 1.9.4**
 # [fit] Released
-# [fit] `https://github.com/elixir-lang/elixir/releases/tag/v1.9.2`
+# [fit] `https://github.com/elixir-lang/elixir/releases/tag/v1.9.4`
 
 ^
-Mostly bug fixes
+About 18 hours ago. Mostly bug fixes, but this release deprecates the use of URLs on mix archive.install, mix escript.install, and mix local.rebar. Support for passing URLs to said commands will be fully removed on Elixir v1.10, as they are unsafe
 
 ---
 
