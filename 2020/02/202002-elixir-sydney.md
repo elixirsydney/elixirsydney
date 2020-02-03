@@ -75,18 +75,18 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ---
 [.hide-footer]
 
-![right](https://www.dropbox.com/s/pianzvrusuwz6e5/josh-price.jpg?dl=1)
+![right](https://www.dropbox.com/s/spbd9sooaurw0gf/daniel-draper.jpg?dl=1)
 
-# [fit] Using **Surface**
-# [fit] to make working with
-# [fit] **LiveView** easier
-# [fit] *Josh Price*
-# [fit] **`@joshprice`**
+# [fit] **Order Revealing**
+# [fit] **Encryption** for
+# [fit] Cloud Data
+# [fit] *Dan Draper*
+# [fit] **`@danieldraper`**
 
 ---
 [.hide-footer]
 
-![right](https://www.dropbox.com/s/0qfigos1vn7tr4s/qing-wu.jpg?dl=1)
+![right](https://www.dropbox.com/s/ej8ra7ikcthz7zm/lenfree-yeung.jpg?dl=1)
 
 # [fit] My Journey
 # [fit] to **Elixir** and
@@ -110,7 +110,7 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@joshprice` **/** `@Potomptic`
+# [fit] `@danieldraper` **/** `@Potomptic`
 # [fit] `@XXXXXXX` **/** **`@elixirsydney`**
 
 ^
