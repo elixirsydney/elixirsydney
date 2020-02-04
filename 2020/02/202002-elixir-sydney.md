@@ -3,7 +3,7 @@ footer: @elixirsydney
 header: alignment(center)
 
 # [fit] **Elixir Sydney**
-# [fit] LiveView Surfaces &
+# [fit] Cloud Data Encryption &
 # [fit] Elixir Journeys
 # **_5 February 2020_**
 
@@ -14,7 +14,7 @@ Welcome to Elixir Sydney
 
 # [fit] **Tonight**
 ## Talks
-## News / Events / Jobs
+## News / Jobs
 ## Hangout
 
 ---
@@ -75,7 +75,7 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ---
 [.hide-footer]
 
-![right](https://www.dropbox.com/s/spbd9sooaurw0gf/daniel-draper.jpg?dl=1)
+![left](https://www.dropbox.com/s/spbd9sooaurw0gf/daniel-draper.jpg?dl=1)
 
 # [fit] **Order Revealing**
 # [fit] **Encryption** for
@@ -86,7 +86,7 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ---
 [.hide-footer]
 
-![right](https://www.dropbox.com/s/ej8ra7ikcthz7zm/lenfree-yeung.jpg?dl=1)
+![left](https://www.dropbox.com/s/ej8ra7ikcthz7zm/lenfree-yeung.jpg?dl=1)
 
 # [fit] My Journey
 # [fit] to **Elixir** and
@@ -99,19 +99,19 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 
 [.hide-footer]
 
-![left](https://www.dropbox.com/s/y5ttlgg70foqsem/clementine-oldfield.jpg?dl=1)
+![right](https://www.dropbox.com/s/a7t2o88uukj5ip3/martin-stannard.jpeg?dl=1)
 
 # [fit] Exercism
 # [fit] **Grade School**
-# [fit] *XXXXXXXX*
-# [fit] **`@XXXXXXX`**
+# [fit] *Martin Stannard*
+# [fit] **`@_martinS_`**
 
 ---
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
 # [fit] `@danieldraper` **/** `@Potomptic`
-# [fit] `@XXXXXXX` **/** **`@elixirsydney`**
+# [fit] `@_martinS_` **/** **`@elixirsydney`**
 
 ^
 If you're Twitter-inclined please let tonight's speakers know how much you appreciate the work they put in by tweeting about it. Giving feedback definitely makes the speakers feel their efforts have made an impact beyond building their own presentation portfolio.<br />
@@ -178,6 +178,10 @@ Given a string containing brackets [], braces {}, parentheses (), or any combina
 <br />
 # [fit] **Tips / Tricks**
 # [fit] **Community News**
+
+^
+- Elixir 1.10.0 released
+- LiveView is up to version 0.6.0, and has introduced LiveComponents and Live Layouts
 
 ---
 
