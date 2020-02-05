@@ -129,6 +129,16 @@ So if you're new to Elixir Sydney can you please put up your hand, don't worry w
 ---
 
 <br />
+# [fit] *Next Meetup's* **_Exercism_**
+# [fit] **Matching Brackets**
+### *`exercism download --exercise=matching-brackets --track=elixir`*
+
+^
+Given a string containing brackets [], braces {}, parentheses (), or any combination thereof, verify that any and all pairs are matched and nested correctly.
+
+---
+
+<br />
 <br />
 # [fit] **Thank you!**
 
@@ -162,16 +172,6 @@ Thanks so much to all the speakers tonight, and if anyone is interested in givin
 - Remember, It is *good* to throw yourself out of your comfort zone and try
 something different, and who knows, you might even end up liking it and wanting to do more.<br />
 - Also, if you need any help creating or critiquing your presentation or want someone to do a dry run, then please feel free to approach any of the organisers and we're happy to help you in any way we can to make you look awesome up on stage.
-
----
-
-<br />
-# [fit] *Next Meetup's* **_Exercism_**
-# [fit] **Matching Brackets**
-### *`exercism download --exercise=matching-brackets --track=elixir`*
-
-^
-Given a string containing brackets [], braces {}, parentheses (), or any combination thereof, verify that any and all pairs are matched and nested correctly.
 
 ---
 
