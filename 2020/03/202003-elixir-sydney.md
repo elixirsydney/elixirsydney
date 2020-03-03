@@ -100,7 +100,8 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ![right](https://www.dropbox.com/s/doo52m6gs0r4nxd/david-parry.png?dl=1)
 
 # [fit] Exercism
-# [fit] **Matching Brackets**
+# [fit] **Matching**
+# [fit] **Brackets**
 # [fit] *David Parry*
 # [fit] **`@suranyami`**
 
