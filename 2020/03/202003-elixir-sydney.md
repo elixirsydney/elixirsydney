@@ -3,7 +3,9 @@ footer: @elixirsydney
 header: alignment(center)
 
 # [fit] **Elixir Sydney**
-# I dream of typechecking brackets
+# Do **typecheckers**
+# **dream** of
+# electric **brackets?**
 # **_4 March 2020_**
 
 ^

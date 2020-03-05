@@ -10,10 +10,10 @@
 - **A small type-checked expression evaluator in Elixir**
   - James Sadler :: [@freshtonic][] ([#18][])
 
-## Lightning Talks
-
-- **The dream BEAM**
+- **[The dream BEAM][]**
   - Jeff Chan :: [@jgmchan][] ([#19][])
+
+## Lightning Talks
 
 - **Exercism: Matching Brackets** ([Exercism Page][])
   - David Parry :: [@suranyami][] ([#20][])
@@ -26,6 +26,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [@freshtonic]: https://twitter.com/freshtonic
 [#18]: https://github.com/elixirsydney/elixirsydney/issues/18
 
+[The dream BEAM]: https://www.slideshare.net/JeffreyChan93/the-dream-beam-a-former-devops-perspective
 [@jgmchan]: https://twitter.com/jgmchan
 [#19]: https://github.com/elixirsydney/elixirsydney/issues/19
 
