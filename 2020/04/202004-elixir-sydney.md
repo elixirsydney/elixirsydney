@@ -49,7 +49,9 @@ house.
 # [fit] **Sponsors**
 
 ^
-First of all, I'd just like to thank our sponsor, who help make Elixir Sydney as objectively awesome as it is.
+First of all, I'd just like to thank our sponsor, who help make Elixir Sydney as objectively awesome as it is.<br />
+Sending pizza and drinks to all of your homes wasn't really possible, so...
+
 
 ---
 [.background-color: #FFFFFF]
@@ -63,7 +65,7 @@ First of all, I'd just like to thank our sponsor, who help make Elixir Sydney as
 ![inline](https://www.dropbox.com/s/a3352nwrtqb7pq3/alembic-logo.jpg?dl=1)
 
 ^
-Alembic is our food sponsor tonight.<br />
+Alembic is our Zoom account sponsor tonight.
 Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you need a hand with a project or API, you should get in touch with them!
 
 ---
@@ -82,6 +84,9 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 # [fit] *Julian Doherty*
 # [fit] **`@madlep`**
 
+^
+First up, we have Julian reprising his talk from Empex LA, called Real Time Strategy at Light Speed, which will cover design patterns for multi-player games in Elixir.
+
 ---
 
 [.hide-footer]
@@ -93,6 +98,9 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 # [fit] **Numerals**
 # [fit] *Paul Fioravanti*
 # [fit] **`@paulfioravanti`**
+
+^
+Next, it will be me, Paul, and I'll be doing a lightning talk on my solution to the Roman Numerals problem from Exercism.
 
 ---
 
