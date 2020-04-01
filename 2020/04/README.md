@@ -12,7 +12,7 @@
 ## Lightning Talks
 
 - **Exercism: Roman Numerals** ([Exercism Page][])
-  - xxx :: [@xxx][] ([#xx][])
+  - Paul Fioravanti :: [@paulfioravanti][] ([#22][])
 
 ### Slide Deck
 
@@ -23,6 +23,8 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [#21]: https://github.com/elixirsydney/elixirsydney/issues/21
 
 [Exercism Page]: https://exercism.io/tracks/elixir/exercises/roman-numerals
+[@paulfioravanti]: https://twitter.com/paulfioravanti
+[#22]: https://github.com/elixirsydney/elixirsydney/issues/22
 
 [Meetup page]: https://www.meetup.com/elixir-sydney/events/bckwkrybcgbcb/
 [Tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2020-04-01%20until%3A2020-04-02&src=typd
