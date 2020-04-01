@@ -75,7 +75,7 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 ---
 [.hide-footer]
 
-![left](https://www.dropbox.com/s/2b98m1lgu1ohch7/julian-doherty.jpg?dl=1)
+![right](https://www.dropbox.com/s/2b98m1lgu1ohch7/julian-doherty.jpg?dl=1)
 
 # [fit] **Real Time**
 # [fit] Strategy At
@@ -93,24 +93,23 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 <!-- # [fit] *Jeff Chan* -->
 <!-- # [fit] **`@jgmchan`** -->
 
-<!-- --- -->
+---
 
-<!-- [.hide-footer] -->
+[.hide-footer]
 
-<!-- ![right](https://www.dropbox.com/s/doo52m6gs0r4nxd/david-parry.png?dl=1) -->
+![left](https://www.dropbox.com/s/23b7hqq9w2ksb61/paul-fioravanti.jpg?dl=1)
 
-<!-- # [fit] Exercism -->
-<!-- # [fit] **Matching** -->
-<!-- # [fit] **Brackets** -->
-<!-- # [fit] *David Parry* -->
-<!-- # [fit] **`@suranyami`** -->
+# [fit] Exercism
+# [fit] **Roman**
+# [fit] **Numerals**
+# [fit] *Paul Fioravanti*
+# [fit] **`@paulfioravanti`**
 
 ---
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-<!-- # [fit] `@freshtonic` **/** `@jgmchan` -->
-# [fit] `@madlep`
+# [fit] `@madlep` **/** `@paulfioravanti`
 # [fit] **`@elixirsydney`**
 
 ^
@@ -130,10 +129,14 @@ So if you're new to Elixir Sydney can you please put up your hand, don't worry w
 
 <br />
 # [fit] *Next Meetup's* **_Exercism_**
-# [fit] **Roman Numerals**
-### *`exercism download --exercise=roman-numerals --track=elixir`*
+# [fit] **Armstrong Numbers**
+### *`exercism download --exercise=armstrong-numbers --track=elixir`*
 
 ^
+An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.<br />
+For example:<br />
+9 is an Armstrong number, because 9 = 9^1 = 9<br />
+10 is not an Armstrong number, because 10 != 1^2 + 0^2 = 1<br />
 Write a function to convert from normal numbers to Roman Numerals.
 
 ---
