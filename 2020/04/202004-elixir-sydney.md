@@ -13,22 +13,33 @@ Welcome to Elixir Sydney
 ---
 
 # [fit] **Tonight**
-## Talks
-## News / Jobs
+# Talks
+# News / Jobs
 
 ---
 
-# [fit] Housekeeping
-## **Bathrooms**
-## **Emergency Exits**
-## **Hot food**
-## **Glass bottles**
-## Don't leave your house
+# [fit] Chat
+
+# [fit] **`elixir-slackin.herokuapp.com`**
+# `#australia`
 
 ^
-- Location of bathrooms
-- Feel free to take any leftover food home with you
-- Once you've finished your food and drinks, please be sure to put your plates in the bins and bottles in the boxes for recycling
+Since Zoom chat is ephemeral, we're going to use the #australia channel on the
+Elixir lang Slack, so follow along there for internal chatter during and after
+the meetup.
+
+---
+
+# [fit] **Housekeeping**
+# Stay Tuned!
+# Don't leave your house
+
+^
+Since we are not at a physical venue, I'm going to assume that you know your
+own abode better than I do with relation to location of bathrooms, emergency
+exits, and what you should do with food remains and glass bottles. So the only
+housekeeping I think I've got is to tell you to stay tuned and don't leave your
+house.
 
 ---
 
@@ -38,19 +49,7 @@ Welcome to Elixir Sydney
 # [fit] **Sponsors**
 
 ^
-First of all, I'd just like to thank our sponsors, who help make Elixir Sydney as objectively awesome as it is.
-
-<!-- --- -->
-<!-- [.background-color: #FFFFFF] -->
-<!-- [.header: #7167FF] -->
-
-<!-- # [fit] Thanks to our Sponsors -->
-
-<!-- ![inline](https://www.dropbox.com/s/12axdzqavv5w8z2/expert360-logo.png?dl=1) -->
-
-<!-- ^ -->
-<!-- You are currently at Expert360, our venue and drinks sponsor tonight.<br /> -->
-<!-- Expert360 is a professional marketplace and management platform powering the project economy. -->
+First of all, I'd just like to thank our sponsor, who help make Elixir Sydney as objectively awesome as it is.
 
 ---
 [.background-color: #FFFFFF]
@@ -82,16 +81,6 @@ Alembic are a boutique consultancy specialising in Elixir and GraphQL. If you ne
 # [fit] **Light Speed**
 # [fit] *Julian Doherty*
 # [fit] **`@madlep`**
-
-<!-- --- -->
-<!-- [.hide-footer] -->
-
-<!-- ![left](https://www.dropbox.com/s/rv22x7t1yzh6cns/jeff-chan.jpg?dl=1) -->
-
-<!-- # [fit] The Dream -->
-<!-- # [fit] **BEAM** -->
-<!-- # [fit] *Jeff Chan* -->
-<!-- # [fit] **`@jgmchan`** -->
 
 ---
 
