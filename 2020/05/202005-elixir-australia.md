@@ -5,7 +5,7 @@ header: alignment(center)
 # [fit] **Elixir**
 # [fit] Australia 🇦🇺
 # [fit] Inaugural **Team Up**!
-# **_1 April 2020_**
+# **_23 May 2020_**
 
 ^
 Welcome to Elixir Sydney
