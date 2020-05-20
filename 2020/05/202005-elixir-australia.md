@@ -182,6 +182,184 @@ something different, and who knows, you might even end up liking it and wanting 
 ---
 
 <br />
+# [fit] **News**
+
+^
+This will end up being a bit of a lightning talk
+
+---
+
+# [fit] Phoenix 1.5
+# [fit] **Released**
+
+---
+[.header-strong: alignment(left)]
+
+# [fit] Phoenix 1.5
+
+# **LiveDashboard**
+
+^
+First major and probably the headline feature of Phoenix 1.5 would be LiveDashboard
+
+---
+[.hide-footer]
+
+![fit](https://www.dropbox.com/s/w0vtd4morwqgib8/live-dashboard.jpg?dl=1)
+
+^
+Which looks something like this.
+You can probably say bye bye to using Observer for a few things since the dashboard has:<br />
+- Performance monitoring and debugging tools<br />
+- Charting of Phoenix events<br />
+- You can add your own custom events<br />
+- Integrates with telemetry, which is a library that allows you to emit events at various stages of an application's lifecycle which you can then respond to aggregating them as metrics and sending that metrics data to a reporting destination, like LiveDashboard (Qing did an Elixir Sydney talk in September 2019 about Telemetry)
+
+---
+[.header-strong: alignment(left)]
+
+# [fit] Phoenix 1.5
+
+# **LiveDashboard**
+# **LiveView Generators**
+
+^
+Next big feature is LiveView generators.<br />
+On the off-chance you don't know what LiveView is, Phoenix LiveView enables interactive, real-time user experiences with server-rendered HTML with you needing to write hardly any, if any, Javascript: basically you write "front-end" code in Elixir
+
+---
+# [fit] **LiveView Generators**
+
+# [fit] `mix phx.new my_app --live`
+
+^
+The first LiveView generator is a --live flag to include everything you need to get up and running developing with LiveView.
+
+---
+# [fit] **LiveView Generators**
+
+# [fit] `mix phx.new my_app --live`
+
+```
+* creating my_app/lib/my_app_web/live/page_live.ex
+* creating my_app/lib/my_app_web/live/page_live.html.leex
+* creating my_app/test/my_app_web/live/page_live_test.exs
+* creating my_app/lib/my_app_web/templates/layout/root.html.leex
+* creating my_app/lib/my_app_web/templates/layout/app.html.eex
+* creating my_app/lib/my_app_web/templates/layout/live.html.leex
+```
+
+^
+It will generate a live/ directory under your application web directory, and insert in a LiveView file and a Live template. I was a bit surprised to see a template here as I have been putting all templates, both live and non-live in the templates directory, but it would seem that the direction given here is that everything live should be siloed in the live directory, except for live layouts, which would seem to live in the templates/layout directory
+
+---
+
+# [fit] **LiveView Generators**
+
+# [fit] `mix phx.gen.live Accounts User users name:string`
+
+^
+The next LiveView generator is phx.gen.live...
+
+---
+
+# [fit] **LiveView Generators**
+
+# [fit] `mix phx.gen.live Accounts User users name:string`
+
+```
+* creating lib/my_app_web/live/user_live/show.ex
+* creating lib/my_app_web/live/user_live/index.ex
+* creating lib/my_app_web/live/user_live/form_component.ex
+* creating lib/my_app_web/live/user_live/form_component.html.leex
+* creating lib/my_app_web/live/user_live/index.html.leex
+* creating lib/my_app_web/live/user_live/show.html.leex
+* creating test/my_app_web/live/user_live_test.exs
+* creating lib/my_app_web/live/modal_component.ex
+* creating lib/my_app_web/live/live_helpers.ex
+```
+
+^
+...which, similar to its non-live cousin, generates some CRUD-named LiveViews, their live templates, and a form LiveComponent, all under a resource-underscore-live namespaced directory under the live/ directory: in this case user_live.
+
+---
+[.header-strong: alignment(left)]
+
+# [fit] Phoenix 1.5
+
+# **LiveDashboard**
+# **LiveView Generators**
+# **PubSub 2.0**
+
+^
+And the final major feature of Phoenix 1.5 is PubSub 2.0 which has a...
+
+---
+[.header: alignment(left)]
+
+# [fit] **PubSub 2.0**
+
+## Flexible and powerful fastlane mechanism
+
+^
+...more flexible and powerful fastlane mechanism.<br />
+Fastlane is a config option in the PubSub.subscribe() function that provides a fastlane path for the broadcasts for %Phoenix.Socket.Broadcast{} events whereby the fastlane process is notified of a cached message instead of the normal subscriber.
+
+---
+[.header: alignment(left)]
+
+# [fit] **PubSub 2.0**
+
+## Flexible and powerful fastlane mechanism
+## Move Phoenix.PubSub out of app endpoint
+
+^
+Version 2.0 also moves Phoenix.PubSub out of the endpoint and explicitly into your supervision tree<br />
+This prevents race conditions at startup and decouples your PubSub system from your application's endpoint.
+
+---
+
+# [fit] **LiveView**
+# [fit] 0.12.1
+
+^
+LiveView itself is at version 0.12.1. If you use LiveView, be prepared to get comfortable with frequently upgrading as things change at a cracking pace.<br />
+The updates since last month that I've been most interested in are:
+
+---
+[.header: alignment(left)]
+
+# [fit] **LiveView 0.12.1**
+
+## `enableProfiling()` and `disableProfiling()` to LiveSocket
+
+^
+enableProfiling() and disableProfiling() to LiveSocket for client performance profiling to aid the development process
+
+---
+[.header: alignment(left)]
+
+# [fit] **LiveView 0.12.1**
+
+## `enableProfiling()` and `disableProfiling()` to LiveSocket
+## Overhaul of the testing module
+
+^
+And, an overhaul of the testing module, more closely integrating your LiveView template with your LiveView events
+
+---
+
+<br />
+# [fit] **FREE LiveView Course**
+
+## `https://pragmaticstudio.com/phoenix-liveview`
+
+^
+If you haven't had the chance to delve into LiveView to see what all the fuss is out, I can highly recommend having a look at Pragmatic Studio's free LiveView course. It's still in development, but they've released 6 videos, including a great intro video that explains, with cool moving diagrams, what LiveView is at a high level and where it's benefits are. They had Jose Valim do technical reviews on the course, so they are legit.
+
+---
+
+<br />
 # [fit] **Tips / Tricks**
 # [fit] Community News
 
