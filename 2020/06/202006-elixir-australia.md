@@ -99,8 +99,8 @@ and common table expressions<br />
 ![right](https://www.dropbox.com/s/7zalftedehy89xy/eduardo-gurgel.jpg?dl=1)
 
 # [fit] Ecto.Multi:
-# [fit] Composable
-# [fit] Transactions
+# [fit] **Composable**
+# [fit] **Transactions**
 # [fit] *Eduardo Gurgel*
 # [fit] **`@edgurjas`**
 
@@ -165,6 +165,20 @@ Thanks so much to all the speakers tonight, and if anyone is interested in givin
 - Open up an issue at the Elixir Sydney Github repo and tell us about the talk you want to submit, or feel free to message any of the organisers, who are myself Paul, Josh, and James from Sydney, and Julian in Melbourne.
 - Remember, It is *good* to throw yourself out of your comfort zone and try something different, and who knows, you might even end up liking it and wanting to do more.<br />
 - Also, if you need any help creating or critiquing your presentation or want someone to do a dry run, then please feel free to approach any of the organisers and we're happy to help you in any way we can to make you look awesome up on the virtual stage.
+
+---
+
+<br />
+# [fit] *Next Meetup's* **_Exercism_**
+# [fit] **Armstrong Numbers**
+### *`exercism download --exercise=armstrong-numbers --track=elixir`*
+
+^
+An Armstrong number is a number that is the sum of its own digits each raised to the power of the number of digits.<br />
+For example:<br />
+9 is an Armstrong number, because 9 = 9^1 = 9<br />
+10 is not an Armstrong number, because 10 != 1^2 + 0^2 = 1<br />
+Write a function to convert from normal numbers to Roman Numerals.
 
 ---
 
