@@ -189,6 +189,8 @@ Write a function to convert from normal numbers to Roman Numerals.
 - Phoenix 1.5 with LiveDashboard, LiveView Generators, PubSub 2.0
 - LiveView 0.13.3
 - `enableProfiling()` and `disableProfiling()` to LiveSocket
+- Hamler
+- Gleam
 
 ---
 
