@@ -9,7 +9,7 @@
 - **[5 ways to solve the preload-top-n problem with Ecto 3.4][]**
   - Mike Buhot :: [@MikeBuhot][] ([#25][])
 
-- **Ecto.Multi: Composable transactions**
+- **[Ecto.Multi: Composable transactions][]**
   - Eduardo Gurgel :: [@edgurjas][] ([#26][])
 
 ### Slide Deck
@@ -19,6 +19,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 
 [5 ways to solve the preload-top-n problem with Ecto 3.4]: https://github.com/mbuhot/chinook/blob/master/presentations/5%20solutions%20to%20the%20preload-top-n%20problem.pdf
 [@MikeBuhot]: https://twitter.com/MikeBuhot
+[Ecto.Multi: Composable transactions]: http://gurgel.me/ecto-multi.pdf
 [#25]: https://github.com/elixirsydney/elixirsydney/issues/25
 
 [@edgurjas]: https://twitter.com/edgurjas
