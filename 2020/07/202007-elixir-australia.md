@@ -90,10 +90,25 @@ He will talk about:<br />
 - Show how straight forward it is to extend the built in arithmetic operators in Elixir.
 
 ---
+[.hide-footer]
+
+![left](https://www.dropbox.com/s/2b98m1lgu1ohch7/julian-doherty.jpg?dl=1)
+
+# [fit] **Massively**
+# [fit] Multiplayer
+# [fit] **Clicking** With
+# [fit] **Phoenix LiveView**
+# [fit] *Julian Doherty*
+# [fit] **`@madlep`**
+
+^
+Julian will do a code walk through of how to put together a simple real time multiplayer clicker game with LiveView. This is an extended version of a lightning talk on LiveView he did at work at Envato.
+
+---
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@robinhilliard`
+# [fit] `@robinhilliard` **/** `@madlep`
 # [fit] **`@ElixirSydney`**
 # [fit] **`@ElixirMelbourne`**
 

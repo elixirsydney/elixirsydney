@@ -9,6 +9,9 @@
 - **Newton Slug Kilowatts**
   - Robin Hilliard :: [@robinhilliard][] ([#27][])
 
+- **Massively Multiplayer Clicking With Phoenix LiveView**
+  - Julian Doherty :: [@madlep][] ([#29][])
+
 ### Slide Deck
 
 This meetup's slide deck was written in a Markdown format designed to work with
@@ -16,6 +19,9 @@ This meetup's slide deck was written in a Markdown format designed to work with
 
 [@robinhilliard]: https://twitter.com/robinhilliard
 [#27]: https://github.com/elixirsydney/elixirsydney/issues/27
+
+[@madlep]: https://twitter.com/madlep
+[#29]: https://github.com/elixirsydney/elixirsydney/issues/29
 
 [Meetup page]: https://www.meetup.com/elixir-sydney/events/gkwrtrybckbcb/
 [Tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2020-07-15%20until%3A2020-07-16&src=typd
