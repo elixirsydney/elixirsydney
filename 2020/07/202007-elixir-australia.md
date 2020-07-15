@@ -68,6 +68,34 @@ Lucida are all about changing the culture of hiring tech talent.
 
 ---
 
+# [fit] **Introduction to Elixir**
+
+![inline](https://www.dropbox.com/s/b3jjifai883iveh/yow-logo.jpg?dl=1)
+
+^
+Before we get into our talks, we just want to mention that Elixir Australia organisers Josh and Paul will be conducting an Introduction to Elixir workshop at Yow! Lambda Jam.
+
+---
+
+# [fit] Introduction to Elixir
+
+## **Workshop Details**
+# [fit] `https://yowconference.com/talks/josh-price/yow-lambda-jam-2020/intro-to-elixir-14564`
+
+## **Sign up**
+# [fit] `https://www.eventbrite.com.au/e/yow-lambda-jam-2020-intro-to-elixir-workshop-july-20-21-2020-tickets-109083559864`
+
+## **Lambda Jam**
+# [fit] `https://yowconference.com/lambdajam`
+
+^
+Here are links to all the course details including a sign up link, and a link to Lambda Jam itself. We'll post those links in the chat as well so you can have a closer look at them.<br />
+The workshop will be held over two three-hour sessions on July 20-21 (Mon-Tues) and will be a combination of presentations and hands-on coding, all over Zoom.<br />
+The cost is $100 for the two sessions, and is a separate purchase to Lambda Jam itself, so you can do the workshop without attending virtual Lambda Jam.<br />
+So, if you are interested in participating, we would love to see you there.
+
+---
+
 <br />
 # [fit] **TALKS**
 
