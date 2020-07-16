@@ -6,7 +6,7 @@
 
 ## Presentations
 
-- **Event Sourcing with Commanded**
+- **[Event Sourcing with Commanded][]** ([video][Event Sourcing with Commanded video])
   - Fiona McCawley :: [@saucerlike][] ([#23][])
 
 - **Randori mob programming exercise**
@@ -17,6 +17,8 @@
 This meetup's slide deck was written in a Markdown format designed to work with
 [Deckset][].
 
+[Event Sourcing with Commanded]: https://github.com/fimac/talks/blob/master/event_sourcing_commanded_20052020/Event%20Sourcing%20with%20Commanded%20-talk.pdf
+[Event Sourcing with Commanded video]: https://www.youtube.com/watch?v=DSms-Kzv3A4
 [@saucerlike]: https://twitter.com/saucerlike
 [#23]: https://github.com/elixirsydney/elixirsydney/issues/23
 
