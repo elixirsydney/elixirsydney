@@ -9,7 +9,7 @@
 - **Exercism: Armstrong Numbers**
   - Rhiana Heath :: [@RhianaHeath][] ([#30][])
 
-- **Trading Cryptocurrency with Elixir**
+- **From Websocket Data to :ets**
   - Cam Stuart :: [@cam_stuart][] ([#31][])
 
 ### Slide Deck
