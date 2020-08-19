@@ -4,7 +4,7 @@ header: alignment(center)
 
 # [fit] **Elixir**
 # [fit] Australia 🇦🇺
-# **_18 August 2020_**
+# **_19 August 2020_**
 
 ^
 Welcome to Elixir Australia
