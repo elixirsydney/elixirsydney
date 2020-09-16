@@ -76,29 +76,30 @@ Lucida are all about changing the culture of hiring tech talent.
 
 ![left](https://www.dropbox.com/s/spbd9sooaurw0gf/daniel-draper.jpg?dl=1)
 
-# [fit] Cipherstash:
-# [fit] A fully encrypted
-# [fit] search index written in Elixir and gRPC**
-# [fit] Elixir and gRPC**
+# [fit] **Cipherstash:**
+# [fit] A **fully encrypted**
+# [fit] search index written in
+# [fit] **Elixir** and **gRPC**
 # [fit] *Daniel Draper*
 # [fit] **`@danieldraper`**
 
 ^
-First up, Dan
+Dan has been working on a new kind of database written in Elixir and C: its fully encrypted with client-side keys and supports full text search. And it has an Ecto adapter!<br />
+He'd love to share the tool as well as some of the lessons learned working with gRPC and HTTP2 in Elixir as well as how to craft a custom Ecto adapter.
 
 ---
 [.hide-footer]
 
 ![left](https://www.dropbox.com/s/4ie2nba3f4wiafd/james-sadler.jpg?dl=1)
 
-# [fit] Strong, static FP
-# [fit] on the BEAM with Hamler
-# [fit] with Hamler
+# [fit] **Strong, static** FP
+# [fit] on the **BEAM**
+# [fit] with **Hamler**
 # [fit] *James Sadler*
 # [fit] **`@freshtonic`**
 
 ^
-Next up, we'll have James
+Next up, we'll have James who will do an intro to strongly-typed functional programming using Hamler, a strongly-typed language with compile-time typechecking, and built-in support for concurrency and distribution on the BEAM.
 
 ---
 
@@ -214,5 +215,5 @@ The ISBN-10 verification process is used to validate book identification numbers
 # [fit] *\(3rd Wednesday of the month\)*
 
 ^
-The next meetup will be in September 16, still online for the foreseeable future.
-So, thanks for coming along and we hope to see you next month for the next installment of Elixir Australia!
+The next meetup will be in October 21, still online for the foreseeable future.
+So, thanks for coming along and we hope to see you next month for the next instalment of Elixir Australia!
