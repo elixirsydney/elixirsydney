@@ -6,16 +6,16 @@
 
 ## Presentations
 
-- **gRPC in Elixir**
-  - Robert Ellen :: [@robertellen][] ([#38][])
+- **Haskell As Elixir**
+  - Julian Doherty :: [@madlep][] ([#37][])
 
 ### Slide Deck
 
 This meetup's slide deck was written in a Markdown format designed to work with
 [Deckset][].
 
-[@robertellen]: https://twitter.com/robertellen
-[#38]: https://github.com/elixirsydney/elixirsydney/issues/38
+[@madlep]: https://twitter.com/madlep
+[#37]: https://github.com/elixirsydney/elixirsydney/issues/37
 
 [Meetup page]: https://www.meetup.com/elixir-sydney/events/zrlnzrybcpbxb/
 [Tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2020-11-17%20until%3A2020-11-19&src=typd
