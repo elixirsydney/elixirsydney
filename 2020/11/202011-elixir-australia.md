@@ -53,36 +53,9 @@ Alembic is our Zoom account sponsor tonight.
 Alembic are a boutique consultancy specialising in Elixir, GraphQL and React. If you need a hand with a project or API, you should get in touch with them!
 
 ---
-[.background-color: #FFFFFF]
-[.header: #7167FF]
-
-# [fit] Thanks to our Sponsors
-
-<br />
-
-![inline](https://www.dropbox.com/s/ws1rixet49itcki/lucida-logo.png?dl=1)
-
-^
-Lucida is a long time sponsor of Elixir Melbourne, so they get a shout out as well.<br />
-Lucida are all about changing the culture of hiring tech talent.
-
----
 
 <br />
 # [fit] **TALKS**
-
----
-[.hide-footer]
-
-![left](https://www.dropbox.com/s/2b98m1lgu1ohch7/julian-doherty.jpg?dl=1)
-
-# [fit] **Haskell**
-# [fit] as **Elixir**
-# [fit] *Julian Doherty*
-# [fit] **`@madlep`**
-
-^
-First up, Julian is going to talk about how we can abuse macros and Elixir type specs to build a DSL that sort of gives us some of the same conciseness and elegance of Haskell's rich type system in Haskell as Elixir.
 
 ---
 [.hide-footer]
@@ -95,12 +68,13 @@ First up, Julian is going to talk about how we can abuse macros and Elixir type 
 # [fit] **`@robertellen`**
 
 ^
+Rob is going to talk about gRPC, "A high-performance, open source universal Remote Procedure Call framework". This talk will cover what gRPC is, and demo the most popular gRPC library for Elixir (https://github.com/elixir-grpc/grpc), showing how Elixir can communicate with services written in other languages we're likely to need to interoperate with in the current software landscape.
 
 ---
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@madlep` **/** `@robertellen`
+# [fit] `@robertellen`
 # [fit] **`@ElixirSydney`**
 # [fit] **`@ElixirMelbourne`**
 
