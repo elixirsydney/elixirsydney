@@ -60,6 +60,20 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL and React. If
 ---
 [.hide-footer]
 
+![right](https://www.dropbox.com/s/s2718zcqkc5vuk4/fiona-mccawley.jpeg?dl=1)
+
+# [fit] **Sensors**,
+# [fit] Beers :beer:,
+# [fit] and **Nerves**
+# [fit] *Fiona McCawley*
+# [fit] **`@saucerlike`**
+
+^
+After recently getting into brewing beer and wanting to learn more about programming hardware and sensors, Fiona will talk about a small project in setting up a Bosch BME280 temperature sensor using Nerves and a Raspberry Pi Zero W, and monitoring and displaying the data.
+
+---
+[.hide-footer]
+
 ![left](https://www.dropbox.com/s/zubqzaxnozem4eu/robin-hilliard.jpg?dl=1)
 
 # [fit] **Safe-ish:**
@@ -75,23 +89,25 @@ Robin will be talking about his summer holiday project, Safe-ish, an experimenta
 ---
 [.hide-footer]
 
-![left](https://www.dropbox.com/s/4ie2nba3f4wiafd/james-sadler.jpg?dl=1)
+![left](https://www.dropbox.com/s/ltwng9364k8szp3/nick-bosch.jpg?dl=1)
 
 # [fit] **Exercism**
-# [fit] Pascal's Triangle
-# [fit] *James Sadler*
-# [fit] **`@freshtonic`**
+# [fit] Pascal's
+# [fit] Triangle
+# [fit] *Nick Bosch*
+# [fit] **`@nicholasbosch`**
 
 ^
-James is going to do a lightning talk on his solution to the Exercism problem Pascal's Triangle, get some feedback, and then take it to his next job interview.
+Nick is going to do a lightning talk on his solution to the Exercism problem Pascal's Triangle, get some feedback, and then take it to his next job interview.
 
 ---
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@robinhilliard` / `@freshtonic`
-# [fit] **`@ElixirSydney`**
-# [fit] **`@ElixirMelbourne`**
+# [fit] `@saucerlike`
+# [fit] `@robinhilliard`
+# [fit] `@nicholasbosch`
+# [fit] **`@ElixirSydney` / `@ElixirMelbourne`**
 
 ^
 If you're Twitter-inclined please let tonight's speakers know how much you appreciate the work they put in by tweeting about it. Giving feedback definitely makes the speakers feel their efforts have made an impact beyond building their own presentation portfolio.<br />
