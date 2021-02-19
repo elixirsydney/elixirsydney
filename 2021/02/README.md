@@ -9,7 +9,7 @@
 - **Sensors, Beers and Nerves**
   - Fiona McCawley :: [@saucerlike][] ([#45][])
 
-- **Safe-ish: A BEAM-bytecode-level-load-time-sandboxy-library-thing**
+- **[Safe-ish: A BEAM-bytecode-level-load-time-sandboxy-library-thing][]**
   - Robin Hilliard :: [@robinhilliard][] ([#42][])
 
 ## Lightning Talks
@@ -25,6 +25,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [@saucerlike]: https://twitter.com/saucerlike
 [#45]: https://github.com/elixirsydney/elixirsydney/issues/45
 
+[Safe-ish: A BEAM-bytecode-level-load-time-sandboxy-library-thing]: https://github.com/elixirsydney/elixirsydney/files/5994837/Safeish_Elixir_Sydney_Feb_21.pdf
 [@robinhilliard]: https://twitter.com/robinhilliard
 [#42]: https://github.com/elixirsydney/elixirsydney/issues/42
 
