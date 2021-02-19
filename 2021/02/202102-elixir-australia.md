@@ -80,7 +80,7 @@ After recently getting into brewing beer and wanting to learn more about program
 # [fit] A BEAM-bytecode-
 # [fit] level-load-time-
 # [fit] sandboxy-library-thing
-# [fit] *Robin Hillard*
+# [fit] *Robin Hilliard*
 # [fit] **`@robinhilliard`**
 
 ^
