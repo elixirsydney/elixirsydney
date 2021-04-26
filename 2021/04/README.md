@@ -7,22 +7,21 @@
 ## Presentations
 
 - **Phoenix Context Asymmetry**
-  - Robert Ellen :: [@robertellen][] ([#46][])
+  - Yevhenii Kurtov :: [@lessless_ua][] ([#48][])
 
 ## Lightning Talks
 
-- **Exercism: Pig Latin**
-  - Julian Doherty :: [@madlep][] ([#47][])
+- **Exercism: Scale Generator**
+  - David Parry :: [@suranyami][]
 
 ### Slide Deck
 
 This meetup's slide deck was written in a Markdown format designed to work with
 [Deckset][].
 
-[@robertellen]: https://twitter.com/robertellen
-[#46]: https://github.com/elixirsydney/elixirsydney/issues/46
-[@madlep]: https://twitter.com/madlep
-[#47]: https://github.com/elixirsydney/elixirsydney/issues/47
-[meetup page]: https://www.meetup.com/elixir-sydney/events/zrlnzryccfbwb/
-[tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2021-03-16%20until%3A2021-03-18&src=typd
+[@lessless_ua]: https://twitter.com/lessless_ua
+[#48]: https://github.com/elixirsydney/elixirsydney/issues/48
+[@suranyami]: https://twitter.com/suranyami
+[meetup page]: https://www.meetup.com/elixir-sydney/events/hnwqgsyccgbcc/
+[tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2021-04-20%20until%3A2021-04-22&src=typd
 [deckset]: https://www.decksetapp.com/
