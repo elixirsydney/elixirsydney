@@ -86,21 +86,36 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 ![right](https://www.dropbox.com/s/kesuf6mr2r8y7mm/qiu-hua.jpg?dl=1)
 
 # [fit] Managing
-# [fit] **Business Rules** in
-# [fit] Elixir
+# [fit] **Business Rules**
+# [fit] in Elixir
 # [fit] **Applications**
 # [fit] _Qiu Hua_
 # [fit] **_`@qhwa`_**
 
 ^
-Our speaker tonight is Qiu, who will be talking about Managing business rules in Elixir applications, specifically what he has done to extract business rules out of code, and make them able to be changed as easily as possible.
+Our first speaker tonight is Qiu, who will be talking about Managing business rules in Elixir applications, specifically what he has done to extract business rules out of code, and make them able to be changed as easily as possible.
+
+---
+[.hide-footer]
+
+![right](https://www.dropbox.com/s/db3qub75lcp57vm/robert-ellen.jpg?dl=1)
+
+# [fit] **Macro Madness:**
+# [fit] when **busting**
+# [fit] boilerplate
+# [fit] **backfires**
+# [fit] _Robert Ellen_
+# [fit] **_`@robertellen`_**
+
+^
+Our second speaker tonight is meetup veteran Rob, talking about an adventure he had writing some macro code to reduce boiler-plate.
 
 ---
 <br />
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@qhwa`
+# [fit] `@qhwa` / `@robertellen`
 # [fit] **`@ElixirSydney`**
 
 ^
