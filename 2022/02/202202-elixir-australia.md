@@ -165,13 +165,13 @@ Thanks so much to all the speakers tonight, and if anyone is interested in givin
 - Remember, It is _good_ to throw yourself out of your comfort zone and try something different, and who knows, you might even end up liking it and wanting to do more.<br />
 - Also, if you need any help creating or critiquing your presentation or want someone to do a dry run, then please feel free to approach any of the organisers and we're happy to help you in any way we can to make you look awesome up on the virtual stage.
 
----
+<!-- --- -->
 
-# [fit] *Next Meetup's* **_Exercism_**
-# [fit] **Free**
-# [fit] **Choice**
+<!-- # [fit] *Next Meetup's* **_Exercism_** -->
+<!-- # [fit] **Free** -->
+<!-- # [fit] **Choice** -->
 
-^
+<!-- ^ -->
 
 ---
 
