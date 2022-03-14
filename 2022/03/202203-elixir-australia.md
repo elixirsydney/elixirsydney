@@ -82,15 +82,19 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 
 ---
 [.hide-footer]
+[.header: #804d70]
+[.header-emphasis: #ffffff]
+[.header-strong: #9f608c]
 
-![right](https://www.dropbox.com/s/a9qovw7drpugf19/theo-harris.jpg?dl=1)
+![original](https://www.dropbox.com/s/a9qovw7drpugf19/theo-harris.jpg?dl=1)
+![original](https://www.dropbox.com/s/ugmcnpq7p8g3kvz/ana-lazarevska.jpg?dl=1)
 
-# [fit] Wordle,
-# [fit] **Elixir**
-# [fit] **Flavour**
-# [fit] _Theo Harris &_
-# [fit] _Ana Lazarevska_
-# [fit] **`@dino_coder`/`@xxx`**
+# [fit] _Wordle,_ **Elixir** _Flavour_
+<br />
+<br />
+<br />
+# [fit] _Theo Harris & Ana Lazarevska_
+# [fit] `@dino_coder`
 
 ^
 Our speakers tonight will be Theo and Ana, who will give a talk about their "simple" starter project while learning Elixir, where they decided to rebuild Wordle using a combination of Elixir, Phoenix Liveview, and TailwindCSS. It will be a showcase of the lessons learned, the overall process, and some of the tricky bits that popped up along the way. Of course, we'll also play a game of Wordle, so get your dictionaries ready!
@@ -99,7 +103,7 @@ Our speakers tonight will be Theo and Ana, who will give a talk about their "sim
 
 ![inline](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@dino_coder` / `@xxx`
+# [fit] `@dino_coder`
 # [fit] **`@ElixirSydney`**
 
 ^

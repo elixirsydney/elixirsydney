@@ -7,7 +7,7 @@
 ## Presentations
 
 - **Wordle, Elixir flavour**
-  - Theo Harris :: [@dino_coder][] ([#61][])
+  - Theo Harris & Ana Lazarevska :: [@dino_coder][] ([#61][])
 
 ### Slide Deck
 
