@@ -9,7 +9,7 @@
 - **Wordle, Elixir flavour**
   - Theo Harris & Ana Lazarevska :: [@dino_coder][] ([#61][])
 
-- **Data Grids with LiveView**
+- **Data Grids with LiveView Slots**
   - Josh Price :: [@joshprice][]
 
 ### Slide Deck
