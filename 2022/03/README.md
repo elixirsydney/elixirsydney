@@ -1,4 +1,4 @@
-# Elixir Australia Wednesday, 16 March 2021
+# Elixir Australia Wednesday, 16 March 2022
 
 - 6:00pm @ Online
 - [Meetup page][]
