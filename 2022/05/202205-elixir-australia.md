@@ -94,14 +94,12 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 
 ---
 
-![inline](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
-
-# [fit] `https://row.land`
-# [fit] **`@ElixirSydney`**
+<br />
+<br />
+# [fit] **Thank you!**
 
 ^
-If you're Twitter-inclined please let tonight's speakers know how much you appreciate the work they put in by tweeting about it. Giving feedback definitely makes the speakers feel their efforts have made an impact beyond building their own presentation portfolio.<br />
-Don't forget to mention @ElixirSydney to tie the night altogether. It also helps to fuel the hype for all our events, which is especially important and helpful for smaller events such as ours.
+Thanks so much to all the speakers tonight, and if anyone is interested in giving a talk at a future Elixir event...
 
 ---
 
@@ -111,15 +109,6 @@ Don't forget to mention @ElixirSydney to tie the night altogether. It also helps
 
 ^
 Elixir Australia has a YouTube channel, complete with a vanity URL, where recordings of talks from this meetup go up, and we're definitely happy to have videos uploaded from other Elixir meetups from around Australia, so if you are a regional meetup organiser or know one who has talk videos that need a home, please reach out.<br />
-
----
-
-<br />
-<br />
-# [fit] **Thank you!**
-
-^
-Thanks so much to all the speakers tonight, and if anyone is interested in giving a talk at a future Elixir event...
 
 ---
 
