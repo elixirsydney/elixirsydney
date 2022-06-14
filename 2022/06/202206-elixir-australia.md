@@ -83,7 +83,7 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 ---
 [.hide-footer]
 
-![left](https://www.dropbox.com/s/a9qovw7drpugf19/theo-harris.jpg?dl=1)
+![left](https://www.dropbox.com/s/sipzmb4ymc6b3pu/theo-harris.jpg?dl=1)
 
 # [fit] Testing
 # [fit] **LiveViews**
@@ -91,6 +91,33 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 # [fit] **Guide**
 # [fit] _Theo Harris_
 # [fit] **`@dino_coder`**
+
+---
+[.hide-footer]
+
+![right](https://www.dropbox.com/s/db3qub75lcp57vm/robert-ellen.jpg?dl=1)
+
+# [fit] **Ten years** of
+# [fit] **Elixir!**
+# [fit] And OTP/Elixir release bonanza!
+# [fit] **2022 edition**
+# [fit] _Robert Ellen_
+# [fit] **_`@robertellen`_**
+
+^
+Rob is celebrating Elixir's 10th anniversary, and will facilitate an interactive session where we share some stories about our Elixir journeys. Then a Livebook going over the latest in OTP and Elixir releases.
+
+---
+<br />
+
+![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
+
+# [fit] `@dino_coder` / `@robertellen`
+# [fit] **`@ElixirSydney`**
+
+^
+If you're Twitter-inclined please let tonight's speakers know how much you appreciate the work they put in by tweeting about it. Giving feedback definitely makes the speakers feel their efforts have made an impact beyond building their own presentation portfolio.<br />
+Don't forget to mention @ElixirSydney to tie the night altogether. It also helps to fuel the hype for all our events, which is especially important and helpful for smaller events such as ours.
 
 ---
 
