@@ -92,6 +92,9 @@ Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Ty
 # [fit] _Theo Harris_
 # [fit] **`@dino_coder`**
 
+^
+Theo will give a broad overview of just how simple it can be to use the LiveViewTest module for writing a range of different tests, as well as tips for avoiding brittle or flaky tests.
+
 ---
 [.hide-footer]
 
