@@ -21,7 +21,7 @@ channel][].
 Yes, there is! It's loads of fun and you should absolutely go to the next one!
 Details are at the [Elixir Camp website][].
 
-[Elixir Australia YouTube channel]: https://www.youtube.com/channel/UCiiwKgYqO9TIfgSZmbJIxjQ
+[Elixir Australia YouTube channel]: https://www.youtube.com/c/ElixirAustralia
 [Elixir Camp website]: https://elixir.camp/
 [ElixirSydney Twitter]: https://twitter.com/ElixirSydney
 [Elixir Sydney Meetup page]: https://www.meetup.com/elixir-sydney/
