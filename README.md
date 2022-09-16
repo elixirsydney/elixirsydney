@@ -1,4 +1,4 @@
-# <img src="./elixir-sydney-logo.jpg" align="left" height="40" /> The Elixir Sydney Meetup
+# <img src="./elixir_au_logo.png" align="left" height="50" />The Elixir Sydney Meetup
 
 ## I want to submit or request a talk!
 
