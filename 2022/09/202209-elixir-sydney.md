@@ -111,11 +111,25 @@ TBD
 Next up, Mike will show how to create simple editable and live updating HTML using contenteditable, LiveView Hooks and Surface.
 
 ---
+[.hide-footer]
+
+![left](https://www.dropbox.com/s/sipzmb4ymc6b3pu/theo-harris.jpg?dl=1)
+
+# [fit] **ElixirConf**
+# [fit] **2022**
+# [fit] Wrap-Up
+# [fit] _Theo Harris_
+# [fit] **`@dino_coder`**
+
+^
+Finally, Theo will go over the highlights from this year's ElixirConf in Colorado, which he attended and spoke at, including exciting new features coming to Elixir and Phoenix!
+
+---
 <br />
 
 ![inline 4%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@MikeBuhot`
+# [fit] `@MikeBuhot` / `@dino_coder`
 # [fit] **`@ElixirSydney`**
 
 ^

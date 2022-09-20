@@ -10,6 +10,9 @@
   - James Harton :: ([#68][])
 - **Hooked on ContentEditable in LiveView with Surface**
   - Mike Buhot :: [@MikeBuhot][] ([#67][])
+- **ElixirConf 2022 Wrap Up**
+  - Theo Harris :: [@dino_coder][] ([#69][])
+ 
 
 ### Slide Deck
 
@@ -20,6 +23,9 @@ This meetup's slide deck was written in a Markdown format designed to work with
 
 [@MikeBuhot]: https://twitter.com/MikeBuhot
 [#67]: https://github.com/elixirsydney/elixirsydney/issues/67
+
+[@dino_coder]: https://twitter.com/dino_coder
+[#69]: https://github.com/elixirsydney/elixirsydney/issues/69
 
 [meetup page]: https://www.meetup.com/elixir-sydney/events/288199330/
 [tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2022-09-20%20until%3A2022-09-22&src=typd
