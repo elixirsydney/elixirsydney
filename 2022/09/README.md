@@ -1,6 +1,6 @@
 # Elixir Sydney Wednesday, 21 September 2022
 
-- 6:00pm @ Online
+- 6:00pm @ [Microsoft Reactor][] & Online
 - [Meetup page][]
 - [Tweets][]
 
@@ -27,6 +27,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [@dino_coder]: https://twitter.com/dino_coder
 [#69]: https://github.com/elixirsydney/elixirsydney/issues/69
 
+[Microsoft Reactor]: https://developer.microsoft.com/en-us/reactor/
 [meetup page]: https://www.meetup.com/elixir-sydney/events/288199330/
 [tweets]: https://twitter.com/search?f=tweets&q=ElixirSydney%20since%3A2022-09-20%20until%3A2022-09-22&src=typd
 [deckset]: https://www.decksetapp.com/
