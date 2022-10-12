@@ -13,6 +13,9 @@
 
 - **The Erlang SSH Library**
   - Nick Gunn :: [@ausimian][] ([#70][])
+
+- **Was this a terrible terrible idea?**
+  - Yasmin Archibald :: [@yasmin_arch][] ([#72][])
  
 
 ### Slide Deck
@@ -25,6 +28,9 @@ This meetup's slide deck was written in a Markdown format designed to work with
 
 [@ausimian]: https://twitter.com/ausimian
 [#70]: https://github.com/elixirsydney/elixirsydney/issues/70
+
+[@yasmin_arch]: https://twitter.com/yasmin_arch
+[#72]: https://github.com/elixirsydney/elixirsydney/issues/72
 
 [Microsoft Reactor]: https://developer.microsoft.com/en-us/reactor/
 [meetup page]: https://www.meetup.com/elixir-sydney/events/gmnvxsydcnbzb/

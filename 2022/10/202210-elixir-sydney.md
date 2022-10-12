@@ -104,7 +104,7 @@ Microsoft Reactor is our venue sponsor, enabling us to get back in person, yet s
 # [fit] **`@dino_coder`**
 
 ^
-After being dragged into the Gleam community discord server, Theo found a tight-knit community who were passionate about their language. So, he decided to learn Gleam in the span of a week and share his experience with other devs who also have an Elixir background. Do he have any idea what he's doing? You will find out soon!
+After being dragged into the Gleam community discord server, Theo Harris found a tight-knit community who were passionate about their language. So, he decided to learn Gleam in the span of a week and share his experience with other devs who also have an Elixir background. Do he have any idea what he's doing? You will find out soon!
 
 ---
 [.hide-footer]
@@ -118,11 +118,26 @@ After being dragged into the Gleam community discord server, Theo found a tight-
 Next up will be Nick Gunn, with a lightning talk about learning how to do cool things with the ssh library that ships with the Erlang standard libraries. His talk will cover clients and servers including shells and subsystems.
 
 ---
+[.hide-footer]
+
+![right](https://www.dropbox.com/s/mnwssa9czx9rmyr/yasmin-archibald.png?dl=1)
+
+# [fit] Was this a
+# [fit] **terrible**
+# [fit] **terrible**
+# [fit] idea?
+# [fit] _Yasmin Archibald_
+# [fit] **`@yasmin_arch`**
+
+^
+Finally, Yasmin Archibald will do a lightning talk where she considers whether it was a terrible mistake to quit her job and enroll in a three month software engineering immersive.
+
+---
 <br />
 
 ![inline 4%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@dino_coder` / `@ausimian`
+# [fit] `@dino_coder` / `@ausimian` / `@yasmin_arch`
 # [fit] **`@ElixirSydney`**
 
 ^
