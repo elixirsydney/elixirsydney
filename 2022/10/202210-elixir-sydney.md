@@ -42,7 +42,7 @@ the meetup.
 
 <br />
 # [fit] Thanks to our
-# [fit] **Sponsor**
+# [fit] **Sponsors**
 
 ^
 First of all, I'd just like to thank our sponsors, who help make Elixir Australia as objectively awesome as it is.<br />
