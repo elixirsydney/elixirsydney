@@ -52,9 +52,8 @@ First of all, I'd just like to thank our sponsors, who help make Elixir Australi
 # [fit] Thanks to our **Sponsors**
 
 <br />
-<br />
 
-![inline](https://www.dropbox.com/s/a3352nwrtqb7pq3/alembic-logo.jpg?dl=1)
+![inline](https://www.dropbox.com/s/i42zwe2pfbme9qh/alembic-logo.svg?dl=1)
 
 ^
 Alembic is our food, beverage, and Zoom account sponsor tonight.
