@@ -107,9 +107,11 @@ After being dragged into the Gleam community discord server, Theo Harris found a
 
 ---
 [.hide-footer]
+![right fit](https://www.dropbox.com/s/lf3j0rxrzcqt1p7/no-photo.png?dl=1)
 
 # [fit] The Erlang
-# [fit] **SSH library**
+# [fit] **SSH**
+# [fit] **library**
 # [fit] _Nick Gunn_
 # [fit] **`@ausimian`**
 
