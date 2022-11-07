@@ -22,7 +22,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [#74]: https://github.com/elixirsydney/elixirsydney/issues/74
 
 [@mayel2b]: https://twitter.com/mayel2b
-[#72]: https://github.com/elixirsydney/elixirsydney/issues/73
+[#73]: https://github.com/elixirsydney/elixirsydney/issues/73
 
 [Microsoft Reactor]: https://developer.microsoft.com/en-us/reactor/
 [meetup page]: https://www.meetup.com/elixir-sydney/events/gndfzsydcpbvb/
