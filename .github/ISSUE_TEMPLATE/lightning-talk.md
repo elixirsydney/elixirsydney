@@ -15,5 +15,5 @@ Please provide the following information:
 - Brief summary of the talk content
 - Which month's meetup you would like to present at
 - Will the talk be given in-person or online
-- Your Twitter username (if you have one)
+- Where you can be found on the internet (e.g. personal website, social media account links etc)
 - Link to, or upload of, a photo of yourself that will appear in the meetup slide deck (if you don't specify one, we'll see if we can find one from your social media accounts)
