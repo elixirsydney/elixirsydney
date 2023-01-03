@@ -119,6 +119,18 @@ First up we have David Parry, who is going to talk about how to dynamically crea
 Next up will be Mayel De Borniol, with a lightning talk about Bonfire, a FOSS toolkit for federated apps, including social networking and coordination tools. He'll give a small overview and some of the technical challenges and uncommon approaches he has taken.
 
 ---
+[.hide-footer]
+![right](https://www.dropbox.com/s/pianzvrusuwz6e5/josh-price.jpg?dl=1)
+
+# [fit] ElixirConf
+# [fit] 2022
+# [fit] **Wrap-up**
+# [fit] _Josh Price_
+# [fit] **_`@joshprice`_**
+
+^
+
+---
 <br />
 
 ![inline 4%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
