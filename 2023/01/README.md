@@ -8,6 +8,8 @@
 
 - **Concurrency in action**
   - Saša Jurić ([#75][])
+- **Stenography and Elixir**
+  - Paul Fioravanti ([#76][])
 
 ### Slide Deck
 
@@ -15,6 +17,7 @@ This meetup's slide deck was written in a Markdown format designed to work with
 [Deckset][].
 
 [#75]: https://github.com/elixirsydney/elixirsydney/issues/75
+[#76]: https://github.com/elixirsydney/elixirsydney/issues/75
 
 [Microsoft Reactor]: https://developer.microsoft.com/en-us/reactor/
 [meetup page]: https://www.meetup.com/elixir-sydney/events/gndfzsydcqbcc/
