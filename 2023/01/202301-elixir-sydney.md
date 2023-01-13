@@ -60,15 +60,12 @@ Alembic is our food, beverage, and Zoom account sponsor tonight.
 Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Typescript. If you need a hand with a project or API, you should get in touch with them!
 
 ---
+[.hide-footer]
 
-# [fit] Thanks to our **Sponsors**
-
-<br />
-
-![inline](https://www.dropbox.com/s/dz9pwx2318hfy8a/microsoft-logo.svg?dl=1)
+![](https://www.dropbox.com/s/dcqwphh2zq1mkoj/Welcome%20to%20the%20Reactor%21.jpg?dl=1)
 
 ^
-Microsoft Reactor is our venue sponsor, enabling us to get back in person, yet still providing all the necessary tech we need to main a good experience online. So, thanks very much, Microsoft Reactor!
+Microsoft Reactor is our venue sponsor, enabling us to get back in person, yet still providing all the necessary tech we need to main a good experience online. If you want to find out more about Reactor and what they do, or you want to check out other events Reactor is hosting, please go to the URLs on screen or scan those QR codes. So thanks very much to Reactor!
 
 ---
 
@@ -96,18 +93,33 @@ Microsoft Reactor is our venue sponsor, enabling us to get back in person, yet s
 ![right](https://www.dropbox.com/s/36tlsem3dl2z96u/sasa-juric.jpg?dl=1)
 
 # [fit] **Concurrency**
-# [fit] in **action**
+# [fit] in **Action**
 # [fit] _Saša_
 # [fit] _Jurić_
 
 ^
+First up is Saša Jurić, with Concurrency in Action, where he will challenge the opinion that concurrency is hard, and should be avoided as much as possible. He'll show that writing highly concurrent programs doesn't have to be very difficult, and that it can even be fun!
+
+---
+[.hide-footer]
+
+![right](https://www.dropbox.com/s/vhpk9vn0fwui6n7/paul-fioravanti2.jpg?dl=1)
+
+# [fit] **Stenography**
+# [fit] and **Elixir**
+# [fit] _Paul_
+# [fit] _Fioravanti_
+
+^
+Next, we have Paul, who will give us an intro to stenography, and how he uses it to write Elixir code.
 
 ---
 <br />
 
-![inline 4%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
+![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
 # [fit] `@sasajuric`
+# [fit] `@paulfioravanti`
 # [fit] **`@ElixirSydney`**
 
 ^
@@ -128,7 +140,7 @@ Thanks so much to all the speakers tonight, and if anyone is interested in givin
 
 ![inline](https://www.dropbox.com/s/k6e71188pn914bw/yt_logo_rgb_dark.png?dl=1)
 
-# [fit] `https://www.youtube.com/c/ElixirAustralia`
+# [fit] `https://www.youtube.com/@ElixirAustralia`
 
 ^
 Elixir Australia has a YouTube channel, complete with a vanity URL, where recordings of talks from this meetup go up, and we're definitely happy to have videos uploaded from other Elixir meetups from around Australia, so if you are a regional meetup organiser or know one who has talk videos that need a home, please reach out.<br />
@@ -177,6 +189,8 @@ Elixir Australia has a YouTube channel, complete with a vanity URL, where record
 # [fit] Next Meetup
 # [fit] **February 15, 2023**
 # [fit] _\(3rd Wednesday of the month\)_
+
+(we're considering changing this...)
 
 ^
 The next meetup is currently scheduled for November 16, 2022, the 3rd Wednesday of the month, still online for now. Hope to see you at the next meetup!
