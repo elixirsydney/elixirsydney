@@ -56,7 +56,7 @@ First of all, I'd just like to thank our sponsors, who help make Elixir Australi
 ![inline](https://www.dropbox.com/s/i42zwe2pfbme9qh/alembic-logo.svg?dl=1)
 
 ^
-Alembic is our food, beverage, and Zoom account sponsor tonight.<br />
+Alembic is our food, beverage,management, and Zoom account sponsor tonight.<br />
 Alembic are a boutique consultancy specialising in Elixir, GraphQL, React and Typescript. As well as sponsor the Elixir Sydney meetup, Alembic financially supports various open source projects in the Elixir/BEAM community, like Ash Framework and Gleam. Alembic are passionate about this tech, and want to see its ecosystem grow. If you, or someone you know, has any development projects that need expertise, whether starting fresh, or extending an existing one, please get in touch!
 
 ---
