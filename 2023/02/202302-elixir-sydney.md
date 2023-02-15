@@ -90,20 +90,6 @@ Microsoft Reactor is our venue sponsor, enabling us to get back in person, yet s
 ---
 [.hide-footer]
 
-![left](https://www.dropbox.com/s/3cn09ahos4sas9e/alfonso-gonzalez.jpg?dl=1)
-
-# [fit] **Nerves**
-# [fit] Ecosystem State
-# [fit] **Tools** and **basics**
-# [fit] _Alfonso_
-# [fit] _Gonzalez_
-
-^
-First up is Alfonso, who will walk through the basics of Nerves in the current ecosystem, tooling, and show a powerful set of tips for beginners who want to start building or learning about the IoT Elixir ecosystem capabilities.
-
----
-[.hide-footer]
-
 ![right fit](https://www.dropbox.com/s/lf3j0rxrzcqt1p7/no-photo.png?dl=1)
 
 # [fit] **Vixen**
@@ -113,14 +99,14 @@ First up is Alfonso, who will walk through the basics of Nerves in the current e
 # [fit] _Nick Gunn_
 
 ^
-Next is Nick, who will talk about Vixen, a library implementing the Noise Protocol Framework. He will cover the framework, as well as the design and implementation of the library
+Tonight Nick will talk about Vixen, a library implementing the Noise Protocol Framework. He will cover the framework, as well as the design and implementation of the library
 
 ---
 <br />
 
 ![inline 3%](https://www.dropbox.com/s/am5fvlc37x3t6jm/Twitter_logo_bird_transparent_png.png?dl=1)
 
-# [fit] `@phonnz` / `@ausimian`
+# [fit] `@ausimian`
 # [fit] **`@ElixirSydney`**
 
 ^
