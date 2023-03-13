@@ -1,4 +1,4 @@
-# Elixir Sydney Wednesday, 18 January 2023
+# Elixir Sydney Wednesday, 15 February 2023
 
 - 6:00pm @ [Microsoft Reactor][] & Online (expected ~6:30pm start)
 - [Meetup page][]
